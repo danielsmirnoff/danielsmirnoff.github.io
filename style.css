@@ -5,11 +5,15 @@ body {
 main {
     margin: 10px;
 }
-h1 {
+.title {
     font-family: monospace;
+    font-weight: 100;
+    text-transform: uppercase;
     color: white;
-    text-align: center;
+    text-align: left;
+    padding: 15px;
 }
+/* -Nav Bar Section- */
 .navbar {
     display: flex;
     justify-content: center;
@@ -27,14 +31,170 @@ h1 {
     color: white;
     text-decoration: none;
     font-family: monospace;
+    font-weight: 100;
+    text-transform: uppercase;
     padding: 15px;
     display: flex;
     justify-content: center;
 }
 .navbar a:hover {
-    background-color: rgb(35, 35, 35);
+    color: black;
+    background-color: rgb(255,255,255);
     border-radius: 10px;
 }
 .navbar li {
     margin: 0 10px;
 }
+
+.SelectedTab a{
+    color: black;
+    background-color: rgb(255,255,255);
+    border-radius: 10px;
+}
+
+/* #region About*/
+.AboutDiv {
+    margin: 25px;
+    padding: 10px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 5px;
+}
+.AboutDiv img {
+    float: left;
+    margin-right: 20px;
+}
+.TextDiv {
+    margin-left: 20px;
+}
+.TextDiv h1 {
+    font-family: monospace;
+    color: white;
+    text-align: left;
+    background-color: rgb(50, 50, 50);
+    display: flex;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.TextDiv h2 {
+    font-family:  monospace;
+    color: white;
+    text-align: left;
+    font-weight: 100;
+}
+
+/* -About Links Section- */
+.links {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+.links h1 {
+    display: table-row;
+    text-align: center;
+    padding: 10px;
+    font-family: monospace;
+    color: white;
+}
+.links ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+}
+.links a {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 15px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+.links a:hover {
+    color: black;
+    background-color: rgb(255,255,255);
+}
+/* #endregion About*/
+
+/* #region Projects*/
+.projects {
+    display: table;
+    margin: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.projects h1 {
+    display: table-row;
+    text-align: center;
+    font-family: monospace;
+    color: white;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+.column{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+.column iframe {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+/* #endregion Projects*/
+
+/* #region Contact*/
+.contact {
+    margin: 50px;
+    padding: 10px;
+    background-color: rgb(50,50,50);
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+.contact h1 {
+    display: table-row;
+    text-align: center;
+    padding: 10px;
+    font-family: monospace;
+    color: white;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.contact ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+}
+.contact a {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 15px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+.contact a:hover {
+    color: black;
+    background-color: rgb(255,255,255);
+}
+/* #endregion Contact*/
+
