@@ -10,7 +10,11 @@
 <body>
 
 <div class="header">
-    <h1 class="title">Daniel Smirnoff - Game Design Portfolio</h1>
+    <div class="titleDiv">
+        <h1 class="title">Game Design Portfolio</h1>
+
+        <h1 class="name">Daniel Smirnoff</h1>
+    </div>
     <nav class="navbar">
         <ul>
             <li><a href="index.html">About</a></li>
@@ -23,7 +27,7 @@
 
 
 <div class="projects">
-    <h1>Finished Games</h1>
+    <h1>Game Jams</h1>
 
     <ul class="project-list">
         <li>
@@ -43,13 +47,28 @@
                     <li>
                         Genre: Puzzle-Platformer
                     </li>
+                    <li>
+                        Status: Finished
+                    </li>
                 </ul>
                 <h3>Overview</h3>
-                <p>An overview of the project</p>
+                <p>This project was part of my university's Game Dev Club's first game jam of the semester. I worked with an extremely talented team, we started with a few concepts and it snowballed until we had an interesting concept and mechanics. The idea was that you play as a villian who planted a bomb in a tower and you have to escape before it goes off. You have to use your time rewind mechanic to solve puzzles and make it out before 1 minute passes.</p>
                 <h3>My Contributions</h3>
-                <p>All the controbutions that ive made</p>
+                <p>Besides team mangement and project planning. Heres the list of my Contributions. </p>
+                <h4>Level Design</h3>
+                <ul class="contributions">
+                    <li>Worked off concepts provided by the art team to alter and construct levels.</li>
+                </ul>
+                <h4>Programming</h3>
+                <ul class="contributions">
+                    <li>Time rewind system: Used abstract classes to give objects unique behaviors during time rewind. As well as replaying positions and rotations physics objects made over time.</li>
+                    <li>Player Movement: Created a intermediate player controller featuring jump-cuts, coyote time and altered gravity make jumps feel good.</li>
+                    <li>2D Physics Objects: Implemented satisfiyng physics based movement of objects such as cogs turning, pistons extending and boxs falling. All which inherit methods that controls behavior during time rewind.</li>
+                </ul>
+                <h3>Links</h3>
                 <div>
                     <iframe frameborder="0" src="https://itch.io/embed/2990550?border_width=2&amp;bg_color=a46f3e&amp;link_color=fac25b&amp;border_color=ffffff" width="210" height="169"><a href="https://dandadev.itch.io/mcbooms-kaboom">McBoom's KaBoom! by DandaDev, Puncake321, worldtrueblue</a></iframe>
+                    <a class="project-link" href="https://github.com/Dannybossboy/SFSUJam2024"><img src="github.png" alt="Project Repo"></a>
                 </div>
             </div>
         </li>

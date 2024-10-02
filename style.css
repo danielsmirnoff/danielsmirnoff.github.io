@@ -5,13 +5,27 @@ body {
 main {
     margin: 10px;
 }
+.titleDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; }
 .title {
     font-family: "Montserrat", sans-serif;
     font-weight: 100;
     text-transform: uppercase;
     color: white;
     text-align: left;
-    padding: 15px;
+    padding: 10px;
+}
+
+.name {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: white;
+    text-align: right;
+    padding: 10px;
 }
 /* -Nav Bar Section- */
 .header {
@@ -137,27 +151,29 @@ main {
 
 /* #region Projects*/
 .projects {
-    display: block;
-    align-content: center;
-
+    max-width: 60%;
     margin-right: 20%;
     margin-left: 20%;
 }
 
 .projects h1{
     color: white;
-    text-align: center;
     font-family: "Montserrat", sans-serif;
 }
 
 /*Project*/
+.project-list {
+    padding: 0;
+}
 .project-list li{
     list-style-type: none;
-    align-content: center;
 }
 
 .project {
-    background-color: rgb(48, 48, 48)
+    background-color: rgb(48, 48, 48);
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
 }
 .project h2 {
     color: rgb(189, 34, 60);
@@ -170,59 +186,71 @@ main {
 }
 .project p {
     color: white;
+    text-indent: 25px;
     font-family: "Montserrat", sans-serif;
+}
+.project div{
+    display: flexbox;
+    align-content: center;
 }
 
 .project-details li {
     color: white;
     font-family: "Montserrat", sans-serif;
     list-style-type: square;
+    padding: 5px;
+
+}
+.project h4 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contributions li {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    list-style-type: square;
+    padding: 5px;
+}
+
+.project-link img {
+    max-width: 100px;
 }
 /* #endregion Projects*/
 
 /* #region Contact*/
 .contact {
-    margin: 50px;
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    max-width: 60%;
+
+    align-content: center;
     padding: 10px;
     background-color: rgb(50,50,50);
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 15px;
+    display: block;
 }
 .contact h1 {
-    display: table-row;
     text-align: center;
     padding: 10px;
     font-family: "Montserrat", sans-serif;
     color: white;
     font-weight: 100;
-    text-transform: uppercase;
+}
+.contact p {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-weight: 100;
+
 }
 .contact ul {
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-    display: flex;
-    list-style: none;
-    overflow: hidden;
+    list-style-type: square;
 }
-.contact a {
-    background-color: rgb(25, 25, 25);
-    color: white;
-    text-decoration: none;
+.contact li {
     font-family: "Montserrat", sans-serif;
+    color: white;
     font-weight: 100;
-    text-transform: uppercase;
-    padding: 15px;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-}
-.contact a:hover {
-    color: black;
-    background-color: rgb(255,255,255);
 }
 /* #endregion Contact*/
 
