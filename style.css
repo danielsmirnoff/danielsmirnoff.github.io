@@ -6,7 +6,7 @@ main {
     margin: 10px;
 }
 .title {
-    font-family: monospace;
+    font-family: "Montserrat", sans-serif;
     font-weight: 100;
     text-transform: uppercase;
     color: white;
@@ -14,9 +14,13 @@ main {
     padding: 15px;
 }
 /* -Nav Bar Section- */
+.header {
+    margin-right: 20%;
+    margin-left: 20%;
+}
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     background-color: rgb(50, 50, 50);
 }
 .navbar ul {
@@ -30,7 +34,7 @@ main {
 .navbar a {
     color: white;
     text-decoration: none;
-    font-family: monospace;
+    font-family: "Montserrat", sans-serif;
     font-weight: 100;
     text-transform: uppercase;
     padding: 15px;
@@ -54,20 +58,23 @@ main {
 
 /* #region About*/
 .AboutDiv {
-    margin: 25px;
+    margin-top: 50px;
+    margin-right: 20%;
+    margin-left: 20%;
     padding: 10px;
     background-color: rgb(50, 50, 50);
     border-radius: 5px;
 }
 .AboutDiv img {
-    float: left;
-    margin-right: 20px;
+    display: flex;
+    float: right;
+    max-width: 20%;
 }
 .TextDiv {
     margin-left: 20px;
 }
 .TextDiv h1 {
-    font-family: monospace;
+    font-family: "Montserrat", sans-serif;
     color: white;
     text-align: left;
     background-color: rgb(50, 50, 50);
@@ -77,7 +84,7 @@ main {
 }
 
 .TextDiv h2 {
-    font-family:  monospace;
+    font-family: "Montserrat", sans-serif;
     color: white;
     text-align: left;
     font-weight: 100;
@@ -93,7 +100,7 @@ main {
     display: table-row;
     text-align: center;
     padding: 10px;
-    font-family: monospace;
+    font-family: "Montserrat", sans-serif;
     color: white;
 }
 .links ul {
@@ -108,47 +115,68 @@ main {
     background-color: rgb(50, 50, 50);
     color: white;
     text-decoration: none;
-    font-family: monospace;
+    font-family: "Montserrat", sans-serif;
     font-weight: 100;
     text-transform: uppercase;
-    padding: 15px;
-    margin: 20px;
+    padding: 5px;
+    margin: 5px;
     display: flex;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .links a:hover {
     color: black;
     background-color: rgb(255,255,255);
 }
+
+.links ul li img{
+    max-width: 50px;
+}
+
 /* #endregion About*/
 
 /* #region Projects*/
 .projects {
-    display: table;
-    margin: 25px;
-    margin-left: auto;
-    margin-right: auto;
+    display: block;
+    align-content: center;
+
+    margin-right: 20%;
+    margin-left: 20%;
 }
-.projects h1 {
-    display: table-row;
-    text-align: center;
-    font-family: monospace;
+
+.projects h1{
     color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
 }
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0px;
+
+/*Project*/
+.project-list li{
+    list-style-type: none;
+    align-content: center;
 }
-.column{
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+
+.project {
+    background-color: rgb(48, 48, 48)
 }
-.column iframe {
-    margin-top: 8px;
-    vertical-align: middle;
+.project h2 {
+    color: rgb(189, 34, 60);
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+.project h3{
+    color: rgb(189, 34, 60);
+    font-family: "Montserrat", sans-serif;
+}
+.project p {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.project-details li {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    list-style-type: square;
 }
 /* #endregion Projects*/
 
@@ -166,7 +194,7 @@ main {
     display: table-row;
     text-align: center;
     padding: 10px;
-    font-family: monospace;
+    font-family: "Montserrat", sans-serif;
     color: white;
     font-weight: 100;
     text-transform: uppercase;
@@ -183,7 +211,7 @@ main {
     background-color: rgb(25, 25, 25);
     color: white;
     text-decoration: none;
-    font-family: monospace;
+    font-family: "Montserrat", sans-serif;
     font-weight: 100;
     text-transform: uppercase;
     padding: 15px;
