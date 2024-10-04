@@ -37,6 +37,7 @@ main {
     justify-content: left;
     background-color: rgb(50, 50, 50);
 }
+
 .navbar ul {
     list-style-type: none;
     padding: 0px;
@@ -44,6 +45,26 @@ main {
     display: flex;
     list-style: none;
     overflow: hidden;
+}
+
+.navbar button {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.navbar button:hover {
+    color: black;
+    background-color: rgb(255,255,255);
+    border-radius: 10px;
+    background: none;
+
 }
 .navbar a {
     color: white;
@@ -171,17 +192,20 @@ main {
 
 .project {
     background-color: rgb(48, 48, 48);
-    padding: 5px;
+    padding: 10px;
     margin: 10px;
     border-radius: 5px;
 }
 .project h2 {
-    color: rgb(189, 34, 60);
-    text-align: center;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    text-decoration: underline;
+    font-weight: 1000;
     font-family: "Montserrat", sans-serif;
 }
 .project h3{
     color: rgb(189, 34, 60);
+    text-decoration: underline;
     font-family: "Montserrat", sans-serif;
 }
 .project p {
@@ -194,6 +218,24 @@ main {
     align-content: center;
 }
 
+.embed {
+    display: flexbox;
+    float: right;
+    text-align:center;
+    padding: 10px;
+}
+.embed h3 {
+    margin-bottom: 10px;
+}
+.embed iframe{
+    display: block;
+    margin: 0 auto;
+    border: 2px;
+}
+.embed div {
+    margin-top: 10px;
+}
+
 .project-details li {
     color: white;
     font-family: "Montserrat", sans-serif;
@@ -202,9 +244,13 @@ main {
 
 }
 .project h4 {
-    color: white;
+    color: rgb(189, 34, 60);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
     font-family: "Montserrat", sans-serif;
 }
+
 
 .contributions li {
     color: white;
@@ -214,7 +260,7 @@ main {
 }
 
 .project-link img {
-    max-width: 100px;
+    max-width: 30px;
 }
 /* #endregion Projects*/
 
@@ -229,6 +275,10 @@ main {
     padding: 10px;
     background-color: rgb(50,50,50);
     display: block;
+}
+.contact ul li {
+    padding: 10px;
+
 }
 .contact h1 {
     text-align: center;
