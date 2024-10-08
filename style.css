@@ -81,6 +81,27 @@ main {
     background-color: rgb(255,255,255);
     border-radius: 10px;
 }
+
+.dropdown {
+    opacity: 0;
+    background-color: rgb(50, 50, 50);
+
+    position: absolute;
+    margin-right: 20%;
+    margin-left: 20%;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.dropbtn:hover .dropdown{
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown li a{
+    display: block;
+}
+
 .navbar li {
     margin: 0 10px;
 }
@@ -127,15 +148,20 @@ main {
 
 /* -About Links Section- */
 .links {
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(50, 50, 50);
+
 }
-.links h1 {
+.links h2 {
     display: table-row;
     text-align: center;
     padding: 10px;
     font-family: "Montserrat", sans-serif;
+    font-weight: 100;
     color: white;
 }
 .links ul {
