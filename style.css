@@ -128,6 +128,15 @@ main {
     background-color: rgb(50, 50, 50);
     border-radius: 5px;
 }
+
+.AboutDiv h2 {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(82, 166, 192);
+    text-align: left;
+    font-weight: 100;
+    margin-left: 20px;
+}
+
 .AboutDiv img {
     display: block;
     border: 10px;
@@ -140,7 +149,7 @@ main {
     float: right;
 }
 .TextDiv {
-    margin-left: 20px;
+
 }
 .TextDiv h1 {
     font-family: "Montserrat", sans-serif;
@@ -158,12 +167,6 @@ main {
     text-indent: 20px;
 }
 
-.TextDiv h2 {
-    font-family: "Montserrat", sans-serif;
-    color: rgb(82, 166, 192);
-    text-align: left;
-    font-weight: 100;
-}
 
 /* -About Links Section- */
 .links {
@@ -213,6 +216,24 @@ main {
 
 .links ul li img{
     max-width: 50px;
+}
+
+/*Best works*/
+
+.bestWorks ul {
+    list-style-type: decimal;
+    color: white;
+}
+
+.bestWorks ul li a{
+    color: white;
+    background-color: rgb(60,60,60);
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 15px;
+    display: flex;
 }
 
 /* #endregion About*/
