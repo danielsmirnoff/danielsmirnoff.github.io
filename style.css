@@ -35,6 +35,7 @@ main {
 .navbar {
     display: flex;
     justify-content: left;
+    border-radius: 10px;
     background-color: rgb(50, 50, 50);
 }
 
@@ -44,9 +45,12 @@ main {
     padding-top: 5px;
     padding-bottom: 5px;
     margin: 0px;
-    display: flex;
     list-style: none;
     overflow: hidden;
+}
+
+.navbar_ul {
+    display: flex;
 }
 
 .navbar button {
@@ -68,6 +72,9 @@ main {
     background: none;
 
 }
+
+
+
 .navbar a {
     color: white;
     text-decoration: none;
@@ -86,13 +93,14 @@ main {
 
 .dropdown {
     opacity: 0;
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(35, 35, 35);
 
     position: absolute;
     margin-right: 20%;
     margin-left: 20%;
     visibility: hidden;
     z-index: 1;
+    max-width: 115px;
 }
 
 .dropbtn:hover .dropdown{
@@ -102,6 +110,8 @@ main {
 
 .dropdown li a{
     display: block;
+    font-size: small;
+    padding: 10px;
 }
 
 .dropdown li {
@@ -121,7 +131,7 @@ main {
 
 /* #region About*/
 .AboutDiv {
-    margin-top: 50px;
+    margin-top: 20px;
     margin-right: 20%;
     margin-left: 20%;
     padding: 10px;
@@ -142,6 +152,7 @@ main {
     border: 10px;
     border-color: white;
     border-radius: 5px;
+    padding: 5px;
     max-width: 150px;
 }
 
@@ -165,16 +176,17 @@ main {
     font-family: "Montserrat", sans-serif;
     color: white;
     text-indent: 20px;
+    letter-spacing: 2px;
 }
 
 
 /* -About Links Section- */
 .links {
     display: inline-block;
+    padding: 10px;
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 20px;
-    padding: 10px;
     border-radius: 5px;
     background-color: rgb(50, 50, 50);
 
@@ -195,6 +207,7 @@ main {
     display: flex;
     list-style: none;
     overflow: hidden;
+    justify-content: center;
 }
 .links a {
     background-color: rgb(50, 50, 50);
@@ -220,14 +233,60 @@ main {
 
 /*Best works*/
 
+.aboutBoxDiv {
+    display: flex;
+    justify-content: left;
+}
+
+.portfolio {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(40, 40, 40);
+}
+
+.portfolio ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flexbox;
+    list-style: none;
+    overflow: hidden;
+}
+
+
+.portfolio ul li img {
+    max-width: 50px;
+}
+
 .bestWorks ul {
+    display: inline-block;
     list-style-type: decimal;
     color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.bestWorks ul li {
+    padding: 10px;
 }
 
 .bestWorks ul li a{
     color: white;
     background-color: rgb(60,60,60);
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 15px;
+    display: flex;
+}
+
+.bestWorks ul li a:hover{
+    color: white;
+    background-color: rgb(75,75,75);
+    border-radius: 10px;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
     font-weight: 100;
@@ -340,7 +399,7 @@ main {
 
 /* #region Contact*/
 .contact {
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 20%;
     margin-right: 20%;
     max-width: 60%;
@@ -350,19 +409,25 @@ main {
     background-color: rgb(50,50,50);
     display: block;
 }
+
+.pageTitle {
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
 .contact ul li {
     padding: 10px;
 
 }
 .contact h1 {
-    text-align: center;
+    text-align: left;
     padding: 10px;
     font-family: "Montserrat", sans-serif;
     color: white;
     font-weight: 100;
 }
 .contact p {
-    text-align: center;
+    text-align: left;
     font-family: "Montserrat", sans-serif;
     color: white;
     font-weight: 100;

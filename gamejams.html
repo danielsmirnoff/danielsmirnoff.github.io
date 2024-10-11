@@ -16,15 +16,14 @@
         <h1 class="name">Daniel Smirnoff</h1>
     </div>
     <nav class="navbar">
-        <ul>
+        <ul class="navbar_ul">
             <li><a href="index.html">About</a></li>
             <li class="dropbtn"><a href="">Projects</a>
                 <ul class="dropdown">
-                    <li><a href="personalprojects.html">Personal Projects</a></li>
+                    <li><a href="personalprojects.html">Personal</a></li>
                     <li class="SelectedTab"><a href="gamejams.html">Gamejams</a></li>
                 </ul>
             </li>
-            <li><a href="experience.html">Experience</a></li>   
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
@@ -36,7 +35,7 @@
 
     <ul class="project-list">
         <li>
-            <div class="project">
+            <div class="project" id="game_mcboomskaboom">
                 <div class="embed">
                     <iframe frameborder="0" src="https://itch.io/embed/2990550?border_width=2&amp;bg_color=a46f3e&amp;link_color=fac25b&amp;border_color=ffffff" width="210" height="169"><a href="https://dandadev.itch.io/mcbooms-kaboom">McBoom's KaBoom! by DandaDev, Puncake321, worldtrueblue</a></iframe>
                     <h3>Links</h3>
@@ -82,37 +81,60 @@
                     <li>2D Physics Objects: Implemented satisfiyng physics based movement of objects such as cogs turning, pistons extending and boxs falling. All which inherit methods that controls behavior during time rewind.</li>
                 </ul>
                 </div>
-
             </div>
         </li>
         <li>
-            <div class="project">
-                <h2>The Knights Rescue</h2>
+            <div class="project" id="game_knightsrescue">
+                <div class="embed">
+                    <iframe frameborder="0" src="https://itch.io/embed/2564248" width="208" height="167"><a href="https://dandadev.itch.io/the-knights-rescue">The Knights Rescue by DandaDev</a></iframe>
+                    <h3>Links</h3>
+                    <div>
+                        <a class="project-link" href="https://github.com/Dannybossboy/SFSUJam"><img src="github.png" alt="Project Repo"></a>
+                    </div>
+                </div>
+                <div class="project-main">
+                <h1>The Knight's Rescue</h1>
                 <h3>Project Details</h3>
                 <ul class="project-details">
                     <li>
                         Game Type: Game Jam
                     </li>
                     <li>
-                        Development Time: 1 week
+                        Engine: Unity
                     </li>
                     <li>
-                        Team-size: 4
+                        Development Time: 3 days
                     </li>
                     <li>
-                        Genre: 2D Puzzle-Platformer
+                        Team-size: 1
+                    </li>
+                    <li>
+                        Genre: 2D, Puzzle, Platformer
+                    </li>
+                    <li>
+                        Status: Finished
                     </li>
                 </ul>
                 <h3>Overview</h3>
-                <p>An overview of the project</p>
+                <p>This project was part of my university's Game Dev Club's first game jam of the semester. I started off the project with 1 other team member, but due to him being busy I ended up being the sole developer of this game. The idea was to create a short platformer with the basic mechanic of toggling lava and water to overcome small puzzles.</p>
                 <h3>My Contributions</h3>
-                <p>All the controbutions that ive made</p>
-                <iframe frameborder="0" src="https://itch.io/embed/2564248" width="208" height="167"><a href="https://dandadev.itch.io/the-knights-rescue">The Knights Rescue by DandaDev</a></iframe>
+                <h4>Level Design</h3>
+                <ul class="contributions">
+                    <li>Created each level with a simple and clear goal, while progressively making each level more difficult.</li>
+                </ul>
+                <h4>Programming</h3>
+                <ul class="contributions">
+                    <li>Created the switch mechanic which turns off and on sections of water which you can swim in and lava which kills you.</li>
+                    <li>Player Movement: Created an advanced player controller featuring jump-cuts, coyote time, jump buffering, air gravity/friction and satisfiyng squash and stretch to add juice.</li>
+                    <li>Coded the rest of the miscellinious features such as UI navigation, respawning, level switching and cutscenes.</li>
+                </ul>
+                </div>
             </div>
         </li>
+
         <li>
             <div class="project">
-                <h2>The Last Shroom</h2>
+                <h1>The Last Shroom</h1>
                 <h3>Project Details</h3>
                 <ul class="project-details">
                     <li>
@@ -136,8 +158,8 @@
             </div>
         </li>
         <li>
-            <div class="project">
-                <h2>Beneath the Mountains</h2>
+            <div class="project" id="game_mountains">
+                <h1>Beneath the Mountains</h1>
                 <h3>Project Details</h3>
                 <ul class="project-details">
                     <li>
@@ -162,7 +184,7 @@
         </li>
         <li>
             <div class="project">
-                <h2>Gears and Grit</h2>
+                <h1>Gears and Grit</h1>
                 <h3>Project Details</h3>
                 <ul class="project-details">
                     <li>
@@ -187,7 +209,7 @@
         </li>
         <li>
             <div class="project">
-                <h2>Fallen Angel</h2>
+                <h1>Fallen Angel</h1>
                 <h3>Project Details</h3>
                 <ul class="project-details">
                     <li>
@@ -212,7 +234,7 @@
         </li>
         <li>
             <div class="project">
-                <h2>M.A.R.V</h2>
+                <h1>M.A.R.V</h1>
                 <h3>Project Details</h3>
                 <ul class="project-details">
                     <li>
@@ -237,7 +259,7 @@
         </li>
         <li>
             <div class="project">
-                <h2>The Crybaby Knight</h2>
+                <h1>The Crybaby Knight</h1>
                 <h3>Project Details</h3>
                 <ul class="project-details">
                     <li>
@@ -261,8 +283,8 @@
             </div>
         </li>
         <li>
-            <div class="project">
-                <h2>The 55th Expedition</h2>
+            <div class="project" id="game_55thexpedition">
+                <h1>The 55th Expedition</h1>
                 <h3>Project Details</h3>
                 <ul class="project-details">
                     <li>
@@ -285,42 +307,9 @@
                 <iframe frameborder="0" src="https://itch.io/embed/2007732" width="208" height="167"><a href="https://dandadev.itch.io/the-55th-expedition">The 55th Expedition by DandaDev</a></iframe>
             </div>
         </li>
-        <li>
-            <div class="project">
-                <h2>Sewage</h2>
-                <h3>Project Details</h3>
-                <ul class="project-details">
-                    <li>
-                        Game Type: Game Jam
-                    </li>
-                    <li>
-                        Development Time: 1 week
-                    </li>
-                    <li>
-                        Team-size: 1
-                    </li>
-                    <li>
-                        Genre: 3D Horror
-                    </li>
-                </ul>
-                <h3>Overview</h3>
-                <p>An overview of the project</p>
-                <h3>My Contributions</h3>
-                <p>All the controbutions that ive made</p>
-                <iframe frameborder="0" src="https://itch.io/embed/1328018" width="208" height="167"><a href="https://dandadev.itch.io/sewage">Sewage by DandaDev</a></iframe>
-            </div>
-        </li>
     </ul>
 
 </div>
-
-    <div>
-        <h1>Unfinished games</h1>
-    </div>
-
-    <div>
-        <h1>Works in progress</h1>
-    </div>
 
 <main>
 </main>
