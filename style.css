@@ -36,7 +36,7 @@ main {
     display: flex;
     justify-content: left;
     border-radius: 10px;
-    background-color: rgb(50, 50, 50);
+    background-image: linear-gradient(to right, rgb(50, 50, 50), rgb(25, 25, 25), rgb(25, 25, 25));
 }
 
 .navbar ul {
@@ -135,6 +135,7 @@ main {
     margin-right: 20%;
     margin-left: 20%;
     padding: 10px;
+    display: flex;
     background-color: rgb(50, 50, 50);
     border-radius: 5px;
 }
@@ -147,20 +148,24 @@ main {
     margin-left: 20px;
 }
 
-.AboutDiv img {
-    display: block;
-    border: 10px;
-    border-color: white;
-    border-radius: 5px;
-    padding: 5px;
-    max-width: 150px;
-}
-
 .aboutImgs {
-    float: right;
-}
-.TextDiv {
+    display: block;
+    justify-content: center;
 
+}
+.aboutImgs img {
+    border: solid;
+    margin: 10px;
+    border-radius: 10px;
+    border-color: white;
+    max-width: 150px;
+    max-height: 150px;
+}
+.aboutImgs p {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    text-indent: 20px;
+    letter-spacing: 1px;
 }
 .TextDiv h1 {
     font-family: "Montserrat", sans-serif;
@@ -176,7 +181,7 @@ main {
     font-family: "Montserrat", sans-serif;
     color: white;
     text-indent: 20px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 
@@ -234,7 +239,7 @@ main {
 /*Best works*/
 
 .aboutBoxDiv {
-    display: flex;
+    display: block;
     justify-content: left;
 }
 
@@ -326,8 +331,9 @@ main {
 }
 .project h1 {
     color: rgb(82, 166, 192);
-    padding: 5px;
-    background-image: linear-gradient(to right, black, rgb(48, 48, 48), rgb(48, 48, 48));
+    padding: 10px;
+    background-image: linear-gradient(to right, rgb(25,25,25), rgb(48, 48, 48), rgb(48, 48, 48));
+    border-radius: 5px;
     text-align: left;
     text-decoration: underline;
     font-weight: 1000;
@@ -403,6 +409,7 @@ main {
     margin-left: 20%;
     margin-right: 20%;
     max-width: 60%;
+    border-radius: 5px;
 
     align-content: center;
     padding: 10px;
