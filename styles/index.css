@@ -104,6 +104,10 @@ main {
     transition: border 0.1s ease-in;
 }
 
+.Title {
+    color: var(--secondary-text);
+}
+
 /* -Projects Section- */
 
 .Project-Div {
@@ -198,101 +202,47 @@ main {
     margin: 0px;
 }
 
+/* -Education Section- */
 
-/* -Nav Bar Section- */
-.navbar {
+.Education-List {
     display: flex;
-    justify-content: left;
-    border-radius: 10px;
-    background-image: linear-gradient(to right, rgb(50, 50, 50), rgb(25, 25, 25), rgb(25, 25, 25));
+    gap: 10px;
 }
 
-.navbar ul {
-    list-style-type: none;
-    padding: 0px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+.Education {
+    background-color: var(--secondary-background);
+    border-radius: 5px;
+    padding: 25px;
+    align-items: center;
+}
+.Education h2, h3 {
+    font-weight: 100;
     margin: 0px;
-    list-style: none;
-    overflow: hidden;
 }
 
-.navbar_ul {
+/* -Skills Section- */
+.Skills-List {
     display: flex;
+    padding: 5px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.navbar button {
-    color: white;
-    text-decoration: none;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 100;
-    text-transform: uppercase;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    background-color: transparent;
-}
-
-.navbar button:hover {
-    color: black;
-    background-color: rgb(255,255,255);
-    border-radius: 10px;
-    background: none;
-
-}
-
-
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 100;
-    text-transform: uppercase;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-}
-.navbar a:hover {
-    color: black;
-    background-color: rgb(255,255,255);
-    border-radius: 10px;
-}
-
-.dropdown {
-    opacity: 0;
-    background-color: rgb(35, 35, 35);
-
-    position: absolute;
-    margin-right: 20%;
-    margin-left: 20%;
-    visibility: hidden;
-    z-index: 1;
-    max-width: 115px;
-}
-
-.dropbtn:hover .dropdown{
-    opacity: 1;
-    visibility: visible;
-}
-
-.dropdown li a{
-    display: block;
-    font-size: small;
+.Skill {
+    height: auto;
+    border: 2px solid var(--secondary-text);
+    border-radius: 5px;
     padding: 10px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
-.dropdown li {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.navbar li {
-    margin: 0 10px;
-}
-
-.SelectedTab a{
-    color: black;
-    background-color: rgb(255,255,255);
-    border-radius: 10px;
+.Skill p {
+    font-size: 1.2rem;
+    padding: 0;
+    color: var(--secondary-text);
+    margin: 0px;
+    text-align: center;
 }
