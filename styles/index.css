@@ -1,0 +1,298 @@
+:root {
+  --background: #01161E;
+  --secondary-background: #124559;
+
+  --panel: #598392;
+  
+  --text: #AEC3B0;
+  --secondary-text: #EFF6E0;
+}
+
+body {
+    margin-top: 10px;
+    margin-right: 10%;
+    margin-left: 10%;
+    background-color: var(--background);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: var(--text);
+}
+
+main {
+    margin: 10px;
+}
+
+/* -Header Section- */
+
+.header {
+    background-color: var(--background);
+    display: flex;
+    position: sticky;
+    object-fit: fill;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.titleDiv {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    float: left;
+}
+
+.title {
+    margin-top: 5px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    font-weight: 100;
+}
+
+.name {
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-weight: 300;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+}
+
+.contact img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.ResumeDiv {
+    margin-left: auto;
+    align-content: center;
+}
+
+.ResumeButton {
+    display: flex;
+    padding: 5px;
+    width: 125px;
+    height: 50px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--text);
+
+    text-align: center;
+    color: var(--text);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+    text-decoration: none
+}
+
+
+.ResumeDiv img {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.ResumeButton button:hover {
+    border: 1px solid var(--secondary-text);
+    transition: border 0.1s ease-in;
+}
+
+/* -Projects Section- */
+
+.Project-Div {
+    display: block;
+}
+
+.Project-List {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+.Project {
+    background-color: var(--secondary-background);
+    border-radius: 10px;
+    margin: 10px;
+    width: 500px;
+    height: 525px;
+    display: flex;
+    min-width: 0;
+    overflow: hidden;
+    flex-direction: column;
+
+    text-decoration: none;
+    color: var(--text);
+}
+.Project:hover {
+    cursor: pointer;
+    border: 1px solid var(--secondary-text);
+    transition: border 0.1s ease-in;
+}
+
+.Project-Video{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.Project-Video-Overlay {
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    width: auto;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 5px;
+}
+
+.Overlay-Content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;    
+}
+
+.Overlay-Content img {
+    height: inherit;
+    padding-right: 5px;
+}
+
+.Project video {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.Project-Title {
+    display: block;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+.Project-Title h1, h3{
+    font-weight: 100;
+    margin: 0px;
+}
+
+.Project-Title h1 {
+    font-weight: 300;
+    color: var(--secondary-text);
+}
+
+.Project-Description {
+    padding: 10px;
+}
+
+.Project-Description p {
+    font-size: 1.2rem;
+    color: white;
+    margin: 0px;
+}
+
+
+/* -Nav Bar Section- */
+.navbar {
+    display: flex;
+    justify-content: left;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(50, 50, 50), rgb(25, 25, 25), rgb(25, 25, 25));
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0px;
+    list-style: none;
+    overflow: hidden;
+}
+
+.navbar_ul {
+    display: flex;
+}
+
+.navbar button {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.navbar button:hover {
+    color: black;
+    background-color: rgb(255,255,255);
+    border-radius: 10px;
+    background: none;
+
+}
+
+
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+.navbar a:hover {
+    color: black;
+    background-color: rgb(255,255,255);
+    border-radius: 10px;
+}
+
+.dropdown {
+    opacity: 0;
+    background-color: rgb(35, 35, 35);
+
+    position: absolute;
+    margin-right: 20%;
+    margin-left: 20%;
+    visibility: hidden;
+    z-index: 1;
+    max-width: 115px;
+}
+
+.dropbtn:hover .dropdown{
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown li a{
+    display: block;
+    font-size: small;
+    padding: 10px;
+}
+
+.dropdown li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.SelectedTab a{
+    color: black;
+    background-color: rgb(255,255,255);
+    border-radius: 10px;
+}

@@ -5,80 +5,222 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles/index.css">
     </head>
 <body>
 
     <div class="header">
         <div class="titleDiv">
-            <h1 class="title">Game Design Portfolio</h1>
-            <h1 class="name">Daniel Smirnoff</h1>
+            <div class="nameDiv">
+                <h1 class="name">Daniel Smirnoff</h1>
+                <div class="contact">
+                    <a href="https://github.com/danielsmirnoff"><img src="images/github.png" alt="Github"></a>
+                    <a href="https://www.linkedin.com/in/daniel-smirnoff-8132ba211/"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://x.com/danda_dev"><img src="images/twitter.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+
+            <h3 class="title">Game Developer</h1>
         </div>
+        <div class="ResumeDiv">
+            <a class="ResumeButton" href="Resume-DanielSmirnoff.pdf" download>
+                <p>Resume</p>
+                <img src="images/download.png" alt="">
+            </a>
 
-        <nav class="navbar">
-            <ul class="navbar_ul">
-                <li class="SelectedTab"><a href="index.html">About</a></li>
-                <li class="dropbtn"><a href="">Projects</a>
-                    <ul class="dropdown">
-                        <li><a href="personalprojects.html">Personal</a></li>
-                        <li><a href="gamejams.html">Gamejams</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-    <h1 class="pageTitle">About Me</h1>
-
-
-<div class="AboutDiv">
-    <div class="aboutBoxDiv">
-        <div class="TextDiv">
-
-            <h2>About Me</h2>
-            <p>Welcome to my Portfolio, my name is Daniel Smirnoff. Little bit about me, I'm an extremely passionate and driven game developer, I appreciate game development as an art form and am constantly surprised by the amount of creativity and innovation behind them. For me personally I enjoy creating challenging and thought provoking experiences where players can experience a story, face hardships and eventually overcome their problems.</p>
-
-
-            <!--
-            <h2>My experiences</h2>
-            <P>I believe that over the years I've gained a great deal of experience, working on personal projects and game jams has been extremely rewarding and an eye opening experience. I would wear many hats during development, from art direction, narrative, audio design and gameplay programming, these are just a few roles to name and all crucial in delivering the ideal experience for the players.</P>
-            <h2>The Future</h2>
-            <p>I am extremely excited to grow as a developer and a programmer, I seek out new opportunities to hopefully grow myself and learn more about this industry. I seriously do believe that games do create a lasting impact on players and I hope to be a part of this industry to innovate on the limit games can be pushed to.</p>
-            -->
-        </div>
-        <div class="aboutImgs">
-            <h2>My Life</h2>
-            <p>My hobbies outside of game development include rock climbing, gaming and going to the gym. Personally I enjoy rock climbing because of its problem solving aspect, I have always enjoyed gaming and believe I have to play games in order to understand how and why they appeal to players.</p>
-            <img src="climbing.jpg" alt="My Face">
         </div>
 
     </div>
 
-    <div class="bestWorks">
-        <h2>Best Works</h2>
-        <ul>
-            <li><a href="personalprojects.html#project_labrats">Lab Rats</a></li>
-            <li><a href="gamejams.html#game_55thexpedition">The 55th Expedition</a></li>
-            <li><a href="gamejams.html#game_soulbelow">Soul Below</a></li>
-            <li><a href="gamejams.html#game_mcboomskaboom">Mcboom's Kaboom</a></li>
-        </ul>
+    <div class="Project-Div">
+        <h2>Projects</h2>
+
+        <div class="Project-List">
+            <!--Lab Rats -->
+            <a href="" class="Project">
+                <div class="Project-Video">
+                    <video loop autoplay muted src="images/LabRatsGameplay.mp4"></video>
+                    <div class="Project-Video-Overlay">
+                         <div class="Overlay-Content">
+                            <img src="images/code.png" alt="Engine">
+                            <p>Unity</p>
+                        </div>
+                        <div class="Overlay-Content">
+                            <img src="images/multiple-users-silhouette.png" alt="Developers">
+                            <p>1</p>
+                        </div>
+                        <div class="Overlay-Content">
+                            <img src="images/clock.png" alt="Development Time">
+                            <p>In Progress</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="Project-Title">
+                    <h1>Lab Rats</h1>
+                    <h3>Solo Developer</h3>
+                </div>
+                <div class="Project-Description">
+                    <p>This project is a way for me to experiment with 3D steam multiplayer development. The premise is that its a cooperative horror experience where you collect loot with friends.</p>
+                </div>
+            </a>
+
+            <!--Soul Below -->
+            <a href="https://dandadev.itch.io/soul-below" class="Project">
+                <div class="Project-Video">
+                    <video loop autoplay muted src="images/SoulBelowGameplay.mp4"></video>
+                    <div class="Project-Video-Overlay">
+                         <div class="Overlay-Content">
+                            <img src="images/code.png" alt="Engine">
+                            <p>Unity</p>
+                        </div>
+                        <div class="Overlay-Content">
+                            <img src="images/multiple-users-silhouette.png" alt="Developers">
+                            <p>3</p>
+                        </div>
+                        <div class="Overlay-Content">
+                            <img src="images/clock.png" alt="Development Time">
+                            <p>1 Week</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="Project-Title">
+                    <h1>Soul Below</h1>
+                    <h3>Gameplay Programmer</h3>
+                </div>
+                <div class="Project-Description">
+                    <p>This project was part of a competative game jam in my university's game dev club. It's a 2D rouguelike that is reminiscent of vampire survivors.</p>
+                </div>
+            </a>
+
+            <!--Gears & Grit -->
+            <a href="https://dandadev.itch.io/gearsandgrit" class="Project">
+                <div class="Project-Video">
+                    <video loop autoplay muted src="images/GearsandGritGameplay.mp4"></video>
+                    <div class="Project-Video-Overlay">
+                         <div class="Overlay-Content">
+                            <img src="images/code.png" alt="Engine">
+                            <p>Unreal</p>
+                        </div>
+                        <div class="Overlay-Content">
+                            <img src="images/multiple-users-silhouette.png" alt="Developers">
+                            <p>1</p>
+                        </div>
+                        <div class="Overlay-Content">
+                            <img src="images/clock.png" alt="Development Time">
+                            <p>1 Week</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="Project-Title">
+                    <h1>Gears & Grit</h1>
+                    <h3>Solo Developer</h3>
+                </div>
+                <div class="Project-Description">
+                    <p>This project was part of the 2023 Epic MegaJam. The concept for this game was to make a 3D puzzle platformer. I worked on implementing puzzle systems that tied in with the player movement mechanics.</p>
+                </div>
+            </a>
+
+            <!--Beneath the Mountains -->
+            <a href="https://dandadev.itch.io/beneath-the-mountains" class="Project">
+                <div class="Project-Video">
+                    <video loop autoplay muted src="images/Beneath the Mountains Gameplay.mp4"></video>
+                    <div class="Project-Video-Overlay">
+                         <div class="Overlay-Content">
+                            <img src="images/code.png" alt="Engine">
+                            <p>Unity</p>
+                        </div>
+                        <div class="Overlay-Content">
+                            <img src="images/multiple-users-silhouette.png" alt="Developers">
+                            <p>1</p>
+                        </div>
+                        <div class="Overlay-Content">
+                            <img src="images/clock.png" alt="Development Time">
+                            <p>1 Month</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="Project-Title">
+                    <h1>Beneath the Mountains</h1>
+                    <h3>Solo Developer</h3>
+                </div>
+                <div class="Project-Description">
+                    <p>This project was part of Metroidvania month game jam. This might be my largest finished product, since it involved so many mechanics and systems.</p>
+                </div>
+            </a>
+
+            <!--Fallen Angel -->
+            <a href="https://dairyproductt.itch.io/fallen-angel" class="Project">
+                <div class="Project-Video">
+                    <video loop autoplay muted src="images/FallenAngelGameplay.mp4"></video>
+                    <div class="Project-Video-Overlay">
+                         <div class="Overlay-Content">
+                            <img src="images/code.png" alt="Engine">
+                            <p>Unity</p>
+                        </div>
+                        <div class="Overlay-Content">
+                            <img src="images/multiple-users-silhouette.png" alt="Developers">
+                            <p>6</p>
+                        </div>
+                        <div class="Overlay-Content">
+                            <img src="images/clock.png" alt="Development Time">
+                            <p>1 Week</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="Project-Title">
+                    <h1>Fallen Angel</h1>
+                    <h3>Gameplay Programmer</h3>
+                </div>
+                <div class="Project-Description">
+                    <p>This project was part of a gamejam. I was in charge of implementing game mechanics such as movement, abilities and enemy behaviour.</p>
+                </div>
+            </a>
+
+            <!--Mcbooms Kaboom -->
+            <a href="https://dandadev.itch.io/mcbooms-kaboom" class="Project">
+                <div class="Project-Video">
+                    <video loop autoplay muted src="images/McboomsKaboomGameplay.mp4"></video>
+                    <div class="Project-Video-Overlay">
+                         <div class="Overlay-Content">
+                            <img src="images/code.png" alt="Engine">
+                            <p>Unity</p>
+                        </div>
+                        <div class="Overlay-Content">
+                            <img src="images/multiple-users-silhouette.png" alt="Developers">
+                            <p>4</p>
+                        </div>
+                        <div class="Overlay-Content">
+                            <img src="images/clock.png" alt="Development Time">
+                            <p>1 Week</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="Project-Title">
+                    <h1>Mcbooms Kaboom</h1>
+                    <h3>Gameplay Programmer</h3>
+                </div>
+                <div class="Project-Description">
+                    <p>This project was for a game jam in for my university's game dev club. I was in charge of implementing systems for puzzles and overall game programming.</p>
+                </div>
+            </a>
+        </div>
     </div>
-</div>
 
-<div class="links">
-    <h2>Résumé</h2>
-    <ul>
-        <li><a href="Resume-DanielSmirnoff.pdf" download><img src="pdfIcon.png" alt="Resume"></a></li>
-    </ul>
-</div>
+    <div class="Education-Div">
+        <h1>Education</h1>
+        <h2>WIP</h2>
+    </div>
 
-
-
-
-
-<main>
-
-</main>
+    <div class="Skills-Div">
+        <h1>Skills</h1>
+        <h2>WIP</h2>
+    </div>
 
 </body>
 </html>
