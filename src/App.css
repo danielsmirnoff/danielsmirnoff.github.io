@@ -1,0 +1,330 @@
+:root {
+  --darker-main: #1B1B1B;
+  --dark-main: #222831;
+  --medium-main: #31363F;
+  --offcolor: #76ABAE;
+  --offcolor2: #B2E5E8;
+  --text: #EEEEEE;
+}
+
+/* Layout */
+.app-container {
+  @apply flex h-screen overflow-hidden;
+  background-color: var(--dark-main);
+  color: var(--text);
+}
+
+.sidebar {
+  @apply w-80 p-8 flex flex-col overflow-y-auto;
+  background-color: var(--medium-main);
+  border-right: 1px solid var(--offcolor2);
+}
+
+.sidebar-content {
+  @apply flex-1;
+}
+
+.main-content {
+  @apply flex-1 overflow-y-auto;
+}
+
+.content-wrapper {
+  @apply max-w-4xl mx-auto p-8 md:p-12;
+}
+
+/* Profile Section */
+.profile-section {
+  @apply mb-8;
+}
+
+.profile-image-wrapper {
+  @apply w-32 h-32 rounded-full mb-4 mx-auto shadow-lg overflow-hidden border-4;
+  border-color: var(--offcolor2);
+}
+
+.profile-image {
+  @apply w-full h-full object-cover;
+}
+
+.profile-name {
+  @apply text-2xl font-bold mb-2 text-center;
+  letter-spacing: -0.02em;
+}
+
+.profile-title {
+  @apply text-lg mb-4 text-center font-semibold;
+  color: var(--offcolor);
+  letter-spacing: -0.01em;
+}
+
+.profile-description {
+  @apply text-xs leading-relaxed text-center;
+  color: rgba(220, 215, 201, 0.8);
+  letter-spacing: -0.01em;
+}
+
+/* Contact Section */
+.contact-section {
+  @apply mb-8;
+}
+
+.section-heading {
+  @apply text-xs font-semibold uppercase mb-4;
+  color: rgba(220, 215, 201, 0.7);
+  letter-spacing: 0.02em;
+}
+
+.contact-links-container {
+  @apply space-y-3;
+}
+
+.contact-link {
+  @apply flex items-center transition-colors;
+  color: rgba(220, 215, 201, 0.8);
+}
+
+.contact-link:hover {
+  color: var(--offcolor);
+}
+
+.contact-icon {
+  @apply mr-3;
+  color: var(--offcolor);
+}
+
+.contact-link:hover .contact-icon {
+  color: rgba(162, 123, 92, 0.8);
+}
+
+.contact-text {
+  @apply text-xs;
+  letter-spacing: -0.01em;
+}
+
+/* Social Links */
+.social-links-container {
+  @apply flex space-x-3;
+}
+
+.social-link {
+  @apply w-12 h-12 rounded-lg flex items-center justify-center transition-colors hover:scale-110 transform;
+  background-color: var(--dark-main);
+}
+
+.social-link:hover {
+  background-color: var(--offcolor);
+}
+
+/* Content Sections */
+.content-section {
+  @apply mb-16 scroll-mt-4;
+}
+
+.section-title {
+  @apply text-2xl font-bold mb-6 pb-2;
+  color: var(--offcolor);
+  border-bottom: 1px solid var(--offcolor2);
+  letter-spacing: -0.02em;
+}
+
+.section-text {
+  @apply leading-relaxed text-base mb-4;
+  text-indent: 1em;
+  color: rgba(220, 215, 201, 0.9);
+  letter-spacing: -0.01em;
+}
+
+.section-text-last {
+  @apply leading-relaxed text-base;
+  color: rgba(220, 215, 201, 0.9);
+  letter-spacing: -0.01em;
+  text-indent: 1em;
+}
+
+/* About me */
+.favorite-games-container {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-6;
+}
+.favorite-game-card {
+  @apply p-5 flex flex-wrap rounded-lg transition-all overflow-hidden;
+  border: 1px solid var(--offcolor2);
+  background-color: var(--darker-main);
+  overflow: hidden;
+  align-items: center;
+}
+.favorite-game-image {
+  width: 100%;
+  align-self: center;
+}
+.favorite-game-name {
+  @apply font-semibold text-base mb-4;
+  width: 100%;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+}
+
+/* Skills Section */
+.skills-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+}
+
+.skill-card {
+  @apply p-6 rounded-lg transition-colors;
+  background-color: var(--darker-main);
+  border: 1px solid var(--offcolor2);
+}
+
+.skill-card:hover {
+  border-color: var(--offcolor);
+}
+
+.skill-category {
+  @apply font-semibold text-base mb-4;
+  color: var(--offcolor);
+  letter-spacing: -0.01em;
+}
+
+.skills-container {
+  @apply flex flex-wrap gap-2;
+}
+
+.skill-tag {
+  @apply px-3 py-1.5 rounded-full text-xs transition-colors;
+  background-color: var(--dark-main);
+  color: rgba(220, 215, 201, 0.9);
+  letter-spacing: -0.01em;
+}
+.skill-tag-important {
+  @apply px-3 py-1.5 rounded-full text-xs transition-colors;
+  background-color: var(--offcolor);
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: bold;
+  letter-spacing: -0.01em;
+}
+.skill-tag-important:hover {
+  background-color: var(--offcolor2);
+}
+
+.skill-tag:hover {
+  background-color: var(--offcolor);
+  color: var(--text);
+}
+
+/* Projects Section */
+.projects-container {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+}
+
+.project-card {
+  @apply rounded-lg transition-all overflow-hidden;
+  background-color: var(--darker-main);
+  border: 1px solid var(--offcolor2);
+}
+
+.project-card:hover {
+  border-color: var(--offcolor);
+  box-shadow: 0 10px 15px -3px rgba(162, 123, 92, 0.2), 0 4px 6px -2px rgba(162, 123, 92, 0.1);
+}
+
+.project-video-wrapper {
+  @apply relative w-full aspect-video;
+  background-color: var(--dark-main);
+}
+
+.project-video {
+  @apply w-full h-full object-cover;
+}
+
+.project-content {
+  @apply p-6;
+}
+
+.project-header {
+  @apply flex justify-between items-start mb-3;
+}
+
+.project-header-info {
+  @apply flex-1;
+}
+
+.project-title {
+  @apply text-lg font-semibold mb-1;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.project-meta {
+  @apply flex items-center gap-3 text-xs;
+  color: rgba(220, 215, 201, 0.7);
+  letter-spacing: -0.01em;
+}
+
+.project-role {
+  color: var(--offcolor);
+}
+
+.project-link {
+  @apply transition-colors ml-4;
+  color: var(--offcolor);
+}
+
+.project-link:hover {
+  color: rgba(162, 123, 92, 0.8);
+}
+
+.project-description {
+  @apply mb-4 leading-relaxed text-sm;
+  color: rgba(220, 215, 201, 0.8);
+  letter-spacing: -0.01em;
+}
+
+.project-tags {
+  @apply flex flex-wrap gap-2;
+}
+
+.project-tag {
+  @apply px-3 py-1.5 rounded-full text-xs;
+  background-color: rgba(44, 57, 48, 0.5);
+  color: var(--offcolor);
+  border: 1px solid var(--offcolor2);
+  letter-spacing: -0.01em;
+}
+
+/* Education Section */
+.education-container {
+  @apply space-y-4;
+}
+
+.education-card {
+  @apply p-6 rounded-lg transition-colors;
+  background-color: var(--medium-main);
+  border: 1px solid var(--offcolor2);
+}
+
+.education-card:hover {
+  border-color: var(--offcolor);
+}
+
+.education-degree {
+  @apply text-lg font-semibold mb-2;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.education-institution {
+  @apply font-medium;
+  color: var(--offcolor);
+}
+
+.education-year {
+  @apply text-xs mt-2;
+  color: rgba(220, 215, 201, 0.7);
+  letter-spacing: -0.01em;
+}
+
+.education-details {
+  @apply text-xs leading-relaxed mt-2;
+  color: rgba(220, 215, 201, 0.8);
+  letter-spacing: -0.01em;
+}
