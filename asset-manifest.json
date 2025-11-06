@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e4084bb7.css",
+    "main.js": "/static/js/main.71e666c3.js",
+    "static/media/SoulBelowGameplay.mp4": "/static/media/SoulBelowGameplay.17f69c9975304b1d7bb7.mp4",
+    "static/media/LabRatsGameplay.mp4": "/static/media/LabRatsGameplay.c78a8bc78ee64d58a1ea.mp4",
+    "static/media/McboomsKaboomGameplay.mp4": "/static/media/McboomsKaboomGameplay.cf28d5450e25fcd81841.mp4",
+    "static/media/Beneath the Mountains Gameplay.mp4": "/static/media/Beneath the Mountains Gameplay.de222ae0cf68203d3224.mp4",
+    "static/media/GearsandGritGameplay.mp4": "/static/media/GearsandGritGameplay.275919daeca52bfcb1f4.mp4",
+    "static/media/FallenAngelGameplay.mp4": "/static/media/FallenAngelGameplay.7d975c991d3e3c410f2c.mp4",
+    "static/media/face.jpeg": "/static/media/face.3b9245a230fbfd18c481.jpeg",
+    "index.html": "/index.html",
+    "main.e4084bb7.css.map": "/static/css/main.e4084bb7.css.map",
+    "main.71e666c3.js.map": "/static/js/main.71e666c3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4084bb7.css",
+    "static/js/main.71e666c3.js"
+  ]
+}
