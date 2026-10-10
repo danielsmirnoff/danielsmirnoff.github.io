@@ -3,6 +3,7 @@ import { projects, categories } from '../data/projects'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import ProjectsGrid from '../components/project-grid'
+import { asset } from '../utils/asset'
 
 const BackLink = () => (
   <Link
@@ -10,7 +11,7 @@ const BackLink = () => (
     className="inline-flex items-center gap-2 text-sm font-semibold text-gray-300
                transition hover:text-[#fca311]"
   >
-    <img src="/src/assets/icons/down.png" className="w-3 h-3 rotate-90" alt="" />
+    <img src={asset("assets/icons/down.png")} className="w-3 h-3 rotate-90" alt="" />
     {/* <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
          strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
       <line x1="19" y1="12" x2="5" y2="12" />

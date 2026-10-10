@@ -1,11 +1,10 @@
 import { education } from '../data/education.ts'
-
-import bg from '../assets/images/school.jpg'
+import { asset } from '../utils/asset';
 
 export default function EducationSection() {
   return (
     <section id="education" className="scroll-mt-32 px-6 py-16" style={{ 
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(${bg})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("${asset("assets/images/school.jpg")}")`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

@@ -1,5 +1,6 @@
 import { NavLink, Link } from 'react-router-dom'
 import { categories } from '../data/projects'
+import { asset } from '../utils/asset';
 
 export default function Navbar() {
   return (
@@ -20,15 +21,15 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             <a href="https://drive.google.com/file/d/1AbYMDXi9CWz3XRJSYbN4eWivpMFqRPMj/view?usp=sharing" target="_blank" rel="noreferrer"
                className="w-10 h-10 flex items-center justify-center text-white rounded-xl hover:border-2 hover:border-black">
-              <img src="/src/assets/icons/resume.png"></img>
+              <img src={asset("assets/icons/resume.png")}></img>
             </a>
             <a href="https://github.com/danielsmirnoff" target="_blank" rel="noreferrer"
                className="w-10 h-10 flex items-center justify-center text-white rounded-xl hover:border-2 hover:border-black">
-              <img src="/src/assets/icons/github.png"></img>
+              <img src={asset("assets/icons/github.png")}></img>
             </a>
             <a href="https://www.linkedin.com/in/daniel-smirnoff-8132ba211/" target="_blank" rel="noreferrer"
                className="w-10 h-10 flex items-center justify-center text-white rounded-xl hover:border-2 hover:border-black">
-              <img src="/src/assets/icons/linkedin.png"></img>
+              <img src={asset("assets/icons/linkedin.png")}></img>
             </a>
           </div>
         </div>
@@ -47,7 +48,7 @@ export default function Navbar() {
               className="inline-flex items-center gap-1 pb-1 hover:text-[#fca311]"
             >
               Projects
-              <img src="/src/assets/icons/down.png" className="w-3 h-3 transition-transform duration-50 group-hover:rotate-180 group-focus-within:rotate-180" alt="" />
+              <img src={asset("assets/icons/down.png")} className="w-3 h-3 transition-transform duration-50 group-hover:rotate-180 group-focus-within:rotate-180" alt="" />
             </a>
 
             {/* Outer wrapper: pt-2 bridges the gap so hover never breaks */}

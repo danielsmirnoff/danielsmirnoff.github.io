@@ -1,5 +1,5 @@
 import { skills } from '../data/skills.ts'
-import bg from '../assets/images/code.png'
+import { asset } from '../utils/asset'
 
 
 const icons: Record<string, React.JSX.Element> = {
@@ -13,7 +13,7 @@ export default function SkillsSection() {
   return (
 
     <section id="skills" className="scroll-mt-32  px-6 py-16" style={{ 
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(${bg})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("${asset("assets/images/school.jpg")}")`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

@@ -1,4 +1,5 @@
 import type { Project, CategoryInfo } from "../types";
+import { asset } from '../utils/asset';
 
 export const categories: CategoryInfo[] = [
   {
@@ -37,7 +38,7 @@ export const projects: Project[] = [
     category: "commercial-games",
     title: "You Suck at Football",
     tags: ["Unreal Engine", "Multiplayer", "3D"],
-    thumbnail: { type: "image", src: "/src/assets/images/projects/football/football_thumbnail.jpeg" },
+    thumbnail: { type: "image", src: asset("assets/images/projects/football/football_thumbnail.jpeg") },
     description: "A co-op rage game about carrying a football up a treacherous path.",
     heroImage: { type: "youtube", videoId: "Hj4940py_9Q" },
     lead: "A co-op rage game where you have to bring a football up a winding, dangerous path.",
@@ -74,9 +75,9 @@ export const projects: Project[] = [
       },
     ],
     gallery: [
-      { type: "image", src: "/src/assets/images/projects/football/football_01.jpg" },
-      { type: "image", src: "/src/assets/images/projects/football/football_02.jpg" },
-      { type: "image", src: "/src/assets/images/projects/football/football_03.jpg" },
+      { type: "image", src: asset("assets/images/projects/football/football_01.jpg") },
+      { type: "image", src: asset("assets/images/projects/football/football_02.jpg") },
+      { type: "image", src: asset("assets/images/projects/football/football_03.jpg") },
     ],
   },
   {
@@ -86,7 +87,7 @@ export const projects: Project[] = [
     category: "game-jams",
     title: "Beybleed Arena",
     tags: ["Unity", "Roguelike", "Beyblade"],
-    thumbnail: { type: "image", src: "/src/assets/images/projects/beybleed/beybleed_thumbnail.png" },
+    thumbnail: { type: "image", src: asset("assets/images/projects/beybleed/beybleed_thumbnail.png") },
     description: "A Beyblade-like roguelike: rip through enemies, upgrade your blade and survive 9 rounds.",
     heroImage: { type: "youtube", videoId: "IARKQ_5atz4" },
     lead: "A Beyblade-like roguelike where you rip and spin through enemies, upgrade your blade and survive all 9 rounds.",
@@ -111,8 +112,8 @@ export const projects: Project[] = [
       },
     ],
     gallery: [
-      { type: "image", src: "/src/assets/images/projects/beybleed/beybleed_01.png" },
-      { type: "image", src: "/src/assets/images/projects/beybleed/beybleed_02.png" },
+      { type: "image", src: asset("assets/images/projects/beybleed/beybleed_01.png") },
+      { type: "image", src: asset("assets/images/projects/beybleed/beybleed_02.png") },
     ],
   },
   {
@@ -122,7 +123,7 @@ export const projects: Project[] = [
     category: "game-jams",
     title: "Caravan Trader (Jam Version)",
     tags: ["Unity", "Trading-Sim"],
-    thumbnail: { type: "image", src: "/src/assets/images/projects/caravan/caravan_thumbnail.png" },
+    thumbnail: { type: "image", src: asset("assets/images/projects/caravan/caravan_thumbnail.png") },
     description: "A cozy trading sim about flipping items between towns.",
     heroImage: { type: "youtube", videoId: "Z6-VXz9MkvE" },
     lead: "A cozy trading-sim game where you can travel between towns, flip items for profit, upgrade your caravan and fight off enemies.",
@@ -152,10 +153,10 @@ export const projects: Project[] = [
       },
     ],
     gallery: [
-      { type: "image", src: "/src/assets/images/projects/caravan/caravan_01.png" },
-      { type: "image", src: "/src/assets/images/projects/caravan/caravan_02.png" },
-      { type: "image", src: "/src/assets/images/projects/caravan/caravan_03.png" },
-      { type: "image", src: "/src/assets/images/projects/caravan/caravan_04.png" },
+      { type: "image", src: asset("assets/images/projects/caravan/caravan_01.png") },
+      { type: "image", src: asset("assets/images/projects/caravan/caravan_02.png") },
+      { type: "image", src: asset("assets/images/projects/caravan/caravan_03.png") },
+      { type: "image", src: asset("assets/images/projects/caravan/caravan_04.png") },
     ],
   },
   {
@@ -165,7 +166,7 @@ export const projects: Project[] = [
     category: "game-jams",
     title: "Puppet Masker",
     tags: ["Unity", "Roguelike", "Top-Down", "Survivors-Like"],
-    thumbnail: { type: "image", src: "/src/assets/images/projects/puppet/puppet_thumbnail.png" },
+    thumbnail: { type: "image", src: asset("assets/images/projects/puppet/puppet_thumbnail.png") },
     description: "Battle enemies, collect masks and grow your army of puppets.",
     heroImage: { type: "youtube", videoId: "arS1eUidJB0" },
     lead: "A roguelike where you battle enemies, collect masks and grow your army of puppets.",
@@ -188,10 +189,10 @@ export const projects: Project[] = [
       },
     ],
     gallery: [
-      { type: "image", src: "/src/assets/images/projects/puppet/puppet_01.png" },
-      { type: "image", src: "/src/assets/images/projects/puppet/puppet_02.png" },
-      { type: "image", src: "/src/assets/images/projects/puppet/puppet_03.png" },
-      { type: "image", src: "/src/assets/images/projects/puppet/puppet_04.png" },
+      { type: "image", src: asset("assets/images/projects/puppet/puppet_01.png") },
+      { type: "image", src: asset("assets/images/projects/puppet/puppet_02.png") },
+      { type: "image", src: asset("assets/images/projects/puppet/puppet_03.png") },
+      { type: "image", src: asset("assets/images/projects/puppet/puppet_04.png") },
     ],
   },
   {
@@ -201,7 +202,7 @@ export const projects: Project[] = [
     category: "game-jams",
     title: "Excarnate",
     tags: ["Unity", "Roguelike", "Card Battler"],
-    thumbnail: { type: "image", src: "/src/assets/images/projects/excarnate/excarnate_thumbnail.png" },
+    thumbnail: { type: "image", src: asset("assets/images/projects/excarnate/excarnate_thumbnail.png") },
     description: "A roguelike card battler set in a dark dungeon.",
     heroImage: { type: "youtube", videoId: "Q4ucQP57asA" },
     lead: "A roguelike card battler where you traverse a dark dungeon, collect cards, battle enemies and grow your army.",
@@ -221,9 +222,9 @@ export const projects: Project[] = [
       },
     ],
     gallery: [
-      { type: "image", src: "/src/assets/images/projects/excarnate/excarnate_01.png" },
-      { type: "image", src: "/src/assets/images/projects/excarnate/excarnate_02.png" },
-      { type: "image", src: "/src/assets/images/projects/excarnate/excarnate_03.png" },
+      { type: "image", src: asset("assets/images/projects/excarnate/excarnate_01.png") },
+      { type: "image", src: asset("assets/images/projects/excarnate/excarnate_02.png") },
+      { type: "image", src: asset("assets/images/projects/excarnate/excarnate_03.png") },
     ],
   },
   {
@@ -233,7 +234,7 @@ export const projects: Project[] = [
     category: "game-jams",
     title: "Underground-Hog Day",
     tags: ["Godot", "Roguelike", "2D", "Incremental"],
-    thumbnail: { type: "image", src: "/src/assets/images/projects/hog/hog_thumbnail.png" },
+    thumbnail: { type: "image", src: asset("assets/images/projects/hog/hog_thumbnail.png") },
     description: "An incremental mining roguelike about a groundhog stuck in a time loop.",
     heroImage: { type: "youtube", videoId: "i8PuMY027KM" },
     lead: "An incremental roguelike mining game where you play as a groundhog stuck in a time loop.",
@@ -266,8 +267,8 @@ export const projects: Project[] = [
       }
     ],
     gallery: [
-      { type: "image", src: "/src/assets/images/projects/hog/hog_01.png" },
-      { type: "image", src: "/src/assets/images/projects/hog/hog_02.png" },
+      { type: "image", src: asset("assets/images/projects/hog/hog_01.png") },
+      { type: "image", src: asset("assets/images/projects/hog/hog_02.png") },
     ],
   },
   {
@@ -277,7 +278,7 @@ export const projects: Project[] = [
     category: "game-jams",
     title: "Soul Below",
     tags: ["Unity", "Roguelike", "2D", "Bullet Hell"],
-    thumbnail: { type: "image", src: "/src/assets/images/projects/soul/soul_thumbnail.png" },
+    thumbnail: { type: "image", src: asset("assets/images/projects/soul/soul_thumbnail.png") },
     description: "Play as the reaper, collect lost souls and escape purgatory.",
     heroImage: { type: "youtube", videoId: "jLaW8sDsm9Q" },
     lead: "A roguelike where you play as the reaper collecting lost souls. Upgrade your gun, defeat enemies and escape purgatory.",
@@ -302,7 +303,7 @@ export const projects: Project[] = [
         ]
       }
     ],
-    gallery: [{ type: "image", src: "/src/assets/images/projects/soul/soul_01.png" }],
+    gallery: [{ type: "image", src: asset("assets/images/projects/soul/soul_01.png") }],
   },
   {
     slug: "mcbooms-kaboom",
@@ -311,7 +312,7 @@ export const projects: Project[] = [
     category: "game-jams",
     title: "McBooms Kaboom",
     tags: ["Unity", "Puzzle", "2D", "Platformer"],
-    thumbnail: { type: "image", src: "/src/assets/images/projects/booms/booms_thumbnail.png" },
+    thumbnail: { type: "image", src: asset("assets/images/projects/booms/booms_thumbnail.png") },
     description: "Escape a clocktower before it blows up using a time-bending ability.",
     heroImage: { type: "youtube", videoId: "bi9BAZdA6dQ" },
     lead: "A time-based puzzle platformer: escape the clocktower before it blows up with a unique time-bending ability.",
@@ -344,8 +345,8 @@ export const projects: Project[] = [
       }
     ],
     gallery: [
-      { type: "image", src: "/src/assets/images/projects/booms/booms_01.png" },
-      { type: "image", src: "/src/assets/images/projects/booms/booms_02.png" },
+      { type: "image", src: asset("assets/images/projects/booms/booms_01.png") },
+      { type: "image", src: asset("assets/images/projects/booms/booms_02.png") },
     ],
   },
   {
@@ -355,7 +356,7 @@ export const projects: Project[] = [
     category: "game-jams",
     title: "Merge Defense",
     tags: ["Unity", "Tower Defense", "2D", "Pixel-Art"],
-    thumbnail: { type: "image", src: "/src/assets/images/projects/merge/merge_thumbnail.png" },
+    thumbnail: { type: "image", src: asset("assets/images/projects/merge/merge_thumbnail.png") },
     description: "Merge towers to upgrade them in this tower defense game.",
     heroImage: { type: "youtube", videoId: "EVbj67i7Bcw" },
     lead: "A tower defense game that mixes a fantasy dungeon aesthetic with sci-fi, where you merge towers to upgrade them.",
@@ -376,9 +377,9 @@ export const projects: Project[] = [
       },
     ],
     gallery: [
-      { type: "image", src: "/src/assets/images/projects/merge/merge_01.png" },
-      { type: "image", src: "/src/assets/images/projects/merge/merge_02.png" },
-      { type: "image", src: "/src/assets/images/projects/merge/merge_03.png" },
+      { type: "image", src: asset("assets/images/projects/merge/merge_01.png") },
+      { type: "image", src: asset("assets/images/projects/merge/merge_02.png") },
+      { type: "image", src: asset("assets/images/projects/merge/merge_03.png") },
     ],
   },
   {
@@ -388,7 +389,7 @@ export const projects: Project[] = [
     category: "game-jams",
     title: "The Knights Rescue",
     tags: ["Unity", "Platformer", "Puzzle"],
-    thumbnail: { type: "image", src: "/src/assets/images/projects/knights/knights_thumbnail.png" },
+    thumbnail: { type: "image", src: asset("assets/images/projects/knights/knights_thumbnail.png") },
     description: "A puzzle platformer about a princess rescuing her worthless knight.",
     heroImage: { type: "youtube", videoId: "j649cO2KFxM" },
     lead: "A puzzle platformer where you play as a princess off to save her worthless knight.",
@@ -408,8 +409,8 @@ export const projects: Project[] = [
       },
     ],
     gallery: [
-      { type: "image", src: "/src/assets/images/projects/knights/knights_01.png" },
-      { type: "image", src: "/src/assets/images/projects/knights/knights_02.png" },
+      { type: "image", src: asset("assets/images/projects/knights/knights_01.png") },
+      { type: "image", src: asset("assets/images/projects/knights/knights_02.png") },
     ],
   },
   {
@@ -419,7 +420,7 @@ export const projects: Project[] = [
     category: "game-jams",
     title: "The Last Shroom",
     tags: ["Unity", "Roguelike"],
-    thumbnail: { type: "image", src: "/src/assets/images/projects/shroom/shroom_thumbnail.png" },
+    thumbnail: { type: "image", src: asset("assets/images/projects/shroom/shroom_thumbnail.png") },
     description: "Defend your castle from the spreading bramble as a little mushroom.",
     heroImage: { type: "youtube", videoId: "UmV87mrlvD0" },
     lead: "Play as a mushroom defending his castle from the bramble. Fight off monsters, push back the bramble and last as long as you can, or win outright.",
@@ -442,8 +443,8 @@ export const projects: Project[] = [
     ],
     
     gallery: [
-      { type: "image", src: "/src/assets/images/projects/shroom/shroom_01.png" },
-      { type: "image", src: "/src/assets/images/projects/shroom/shroom_02.png" },
+      { type: "image", src: asset("assets/images/projects/shroom/shroom_01.png") },
+      { type: "image", src: asset("assets/images/projects/shroom/shroom_02.png") },
     ],
   },
   {
@@ -453,7 +454,7 @@ export const projects: Project[] = [
     category: "game-jams",
     title: "Beneath the Mountains",
     tags: ["Unity", "Metroidvania", "3D", "First Person"],
-    thumbnail: { type: "image", src: "/src/assets/images/projects/mountain/mountain_thumbnail.png" },
+    thumbnail: { type: "image", src: asset("assets/images/projects/mountain/mountain_thumbnail.png") },
     description: "Explore a lost civilization, earn upgrades and escape.",
     heroImage: { type: "youtube", videoId: "jxJ_NwLF-WE" },
     lead: "Stumble across a lost civilization, explore the depths, take down enemies, earn upgrades and escape.",
@@ -476,9 +477,9 @@ export const projects: Project[] = [
       },
     ],
     gallery: [
-      { type: "image", src: "/src/assets/images/projects/mountain/mountain_01.png" },
-      { type: "image", src: "/src/assets/images/projects/mountain/mountain_02.png" },
-      { type: "image", src: "/src/assets/images/projects/mountain/mountain_03.png" },
+      { type: "image", src: asset("assets/images/projects/mountain/mountain_01.png") },
+      { type: "image", src: asset("assets/images/projects/mountain/mountain_02.png") },
+      { type: "image", src: asset("assets/images/projects/mountain/mountain_03.png") },
     ],
   },
   {
@@ -488,7 +489,7 @@ export const projects: Project[] = [
     category: "game-jams",
     title: "Gears and Grit",
     tags: ["Unreal Engine", "Puzzle", "Platformer", "3D"],
-    thumbnail: { type: "image", src: "/src/assets/images/projects/gears/gears_thumbnail.png" },
+    thumbnail: { type: "image", src: asset("assets/images/projects/gears/gears_thumbnail.png") },
     description: "A 3D puzzle platformer about a robot finding its way out.",
     heroImage: { type: "youtube", videoId: "llXZ5LmOvI4" },
     lead: "A 3D puzzle platformer where you play as a robot trying to find its way out.",
@@ -510,10 +511,10 @@ export const projects: Project[] = [
       },
     ],
     gallery: [
-      { type: "image", src: "/src/assets/images/projects/gears/gears_01.png" },
-      { type: "image", src: "/src/assets/images/projects/gears/gears_02.png" },
-      { type: "image", src: "/src/assets/images/projects/gears/gears_03.png" },
-      { type: "image", src: "/src/assets/images/projects/gears/gears_04.png" },
+      { type: "image", src: asset("assets/images/projects/gears/gears_01.png") },
+      { type: "image", src: asset("assets/images/projects/gears/gears_02.png") },
+      { type: "image", src: asset("assets/images/projects/gears/gears_03.png") },
+      { type: "image", src: asset("assets/images/projects/gears/gears_04.png") },
     ],
   },
   {
@@ -523,7 +524,7 @@ export const projects: Project[] = [
     category: "game-jams",
     title: "Fallen Angel",
     tags: ["Unity", "Arcade"],
-    thumbnail: { type: "image", src: "/src/assets/images/projects/angel/angel_thumbnail.png" },
+    thumbnail: { type: "image", src: asset("assets/images/projects/angel/angel_thumbnail.png") },
     description: "An arcade game about a fallen angel escaping endless purgatory.",
     heroImage: { type: "youtube", videoId: "aeSofGk9-4c" },
     lead: "An arcade game where you play as a fallen angel trying to escape an endless purgatory.",
@@ -555,8 +556,8 @@ export const projects: Project[] = [
       }
     ],
     gallery: [
-      { type: "image", src: "/src/assets/images/projects/angel/angel_01.png" },
-      { type: "image", src: "/src/assets/images/projects/angel/angel_02.png" },
+      { type: "image", src: asset("assets/images/projects/angel/angel_01.png") },
+      { type: "image", src: asset("assets/images/projects/angel/angel_02.png") },
     ],
   },
   {
@@ -566,7 +567,7 @@ export const projects: Project[] = [
     category: "game-jams",
     title: "M.A.R.V.",
     tags: ["Unity", "Puzzle", "Platformer"],
-    thumbnail: { type: "image", src: "/src/assets/images/projects/marv/marv_thumbnail.png" },
+    thumbnail: { type: "image", src: asset("assets/images/projects/marv/marv_thumbnail.png") },
     description: "A short puzzle platformer with your personal robot, M.A.R.V.",
     heroImage: { type: "youtube", videoId: "XOAMiYziNnw" },
     lead: "Solve puzzles in this short puzzle platformer with the help of M.A.R.V., your personal robot.",
@@ -581,9 +582,9 @@ export const projects: Project[] = [
       // TODO: add Technical Highlights (how the abilities are structured).
     ],
     gallery: [
-      { type: "image", src: "/src/assets/images/projects/marv/marv_01.png" },
-      { type: "image", src: "/src/assets/images/projects/marv/marv_02.png" },
-      { type: "image", src: "/src/assets/images/projects/marv/marv_03.png" },
+      { type: "image", src: asset("assets/images/projects/marv/marv_01.png") },
+      { type: "image", src: asset("assets/images/projects/marv/marv_02.png") },
+      { type: "image", src: asset("assets/images/projects/marv/marv_03.png") },
     ],
   },
   {
@@ -593,7 +594,7 @@ export const projects: Project[] = [
     category: "game-jams",
     title: "The Crybaby Knight",
     tags: ["Unity", "Rage Game", "Platformer"],
-    thumbnail: { type: "image", src: "/src/assets/images/projects/crybaby/crybaby_thumbnail.png" },
+    thumbnail: { type: "image", src: asset("assets/images/projects/crybaby/crybaby_thumbnail.png") },
     description: "A Jump King-like where you launch a princess up to rescue her crybaby knight.",
     heroImage: { type: "youtube", videoId: "PUhvUBDpneg" },
     lead: "Play as a princess who has to save her crybaby knight. Launch yourself in this Jump King-like game and save the knight.",
@@ -609,8 +610,8 @@ export const projects: Project[] = [
       // TODO: add Technical Highlights.
     ],
     gallery: [
-      { type: "image", src: "/src/assets/images/projects/crybaby/crybaby_01.png" },
-      { type: "image", src: "/src/assets/images/projects/crybaby/crybaby_02.png" },
+      { type: "image", src: asset("assets/images/projects/crybaby/crybaby_01.png") },
+      { type: "image", src: asset("assets/images/projects/crybaby/crybaby_02.png") },
     ],
   },
   {
@@ -620,7 +621,7 @@ export const projects: Project[] = [
     category: "game-jams",
     title: "The 55th Expedition",
     tags: ["Unity", "Dungeon Crawler", "Turn-Based"],
-    thumbnail: { type: "image", src: "/src/assets/images/projects/expedition/expedition_thumbnail.png" },
+    thumbnail: { type: "image", src: asset("assets/images/projects/expedition/expedition_thumbnail.png") },
     description: "A turn-based dungeon crawler about finding rare items and escaping.",
     heroImage: { type: "youtube", videoId: "NrLEGZ7C-k8" },
     lead: "Explore the depths of this dungeon crawler, find rare items, upgrade your character and escape the dungeon.",
@@ -646,9 +647,9 @@ export const projects: Project[] = [
       },
     ],
     gallery: [
-      { type: "image", src: "/src/assets/images/projects/expedition/expedition_01.png" },
-      { type: "image", src: "/src/assets/images/projects/expedition/expedition_02.png" },
-      { type: "image", src: "/src/assets/images/projects/expedition/expedition_03.png" },
+      { type: "image", src: asset("assets/images/projects/expedition/expedition_01.png") },
+      { type: "image", src: asset("assets/images/projects/expedition/expedition_02.png") },
+      { type: "image", src: asset("assets/images/projects/expedition/expedition_03.png") },
     ],
   },
   {
@@ -659,9 +660,9 @@ export const projects: Project[] = [
     title: "Caravan Trader (Full Version)",
     tags: ["Unity", "Trading-Sim", "RPG", "Story", "Base Building"],
     // TODO: use a distinct thumbnail from the jam version.
-    thumbnail: { type: "image", src: "/src/assets/images/projects/caravan/caravan_thumbnail.png" },
+    thumbnail: { type: "image", src: asset("assets/images/projects/caravan/caravan_thumbnail.png") },
     description: "A cozy trading sim about travel, characters and upgrading your caravan.",
-    heroImage: { type: "video", src: "/src/assets/videos/caravan_2_gameplay.mp4" },
+    heroImage: { type: "video", src: asset("assets/videos/caravan_2_gameplay.mp4") },
     lead: "A cozy trading-sim game where you can travel between towns, interact with unique characters, flip items for profit and upgrade your caravan.",
     // TODO: add a wishlist or devlog link.
     links: [
@@ -692,10 +693,10 @@ export const projects: Project[] = [
       {
         title: "Building System",
         content: [
-          {type: "media", images: [{type: "video", src: "/src/assets/videos/caravan_building_demo.mp4", label: "Building demo"}]},
+          {type: "media", images: [{type: "video", src: asset("assets/videos/caravan_building_demo.mp4"), label: "Building demo"}]},
           {type: "text", text: "This is THE most complex mechanic Ive ever worked on. Not only does it need to support a grid based building system, it needs to support layers, building types, sockets, connections, unique behaviour, player interaction and building restrictions.",},
           {type: "text", text: "I ended up designing the system using this architecture:",},
-          {type: "media", images: [{type: "image", src: "/src/assets/images/projects/caravan/caravan_02_code.png", label: "Snippet of the building system architecture"}]},
+          {type: "media", images: [{type: "image", src: asset("assets/images/projects/caravan/caravan_02_code.png"), label: "Snippet of the building system architecture"}]},
           {type: "text", text: "The idea was this, the building instance is a pure c# class, it has a generic key/value data store that stores unique data per object, it can be moved around easily and serialized. Doing this allows the building prefab to stay seperated from the data and any behaviour modifies the value in the data store directly. This was needed to support the sheer amount of unique buildings we need that need to persist between scenes and be saved/loaded.",},
 
         ]
@@ -704,9 +705,9 @@ export const projects: Project[] = [
         title: "Quest System",
         content: [
           {type: "text", text: "The current questing system we have is pretty robust, quests arent specifically marked, but tracked in your inventory. We want a feeling of exploration and visually guiding the player all the time would just ruin the immersion.",},
-          {type: "media", images: [{type: "image", src: "/src/assets/images/projects/caravan/caravan_02_06.png", label: "Current Quest Menu"}]},
+          {type: "media", images: [{type: "image", src: asset("assets/images/projects/caravan/caravan_02_06.png"), label: "Current Quest Menu"}]},
           {type: "text", text: "This system allows the creation of quests through scriptable objects and allows easy extension to support new quest types. It was a simple design; use the global event bus to listen to certain quest flags being completed then process them based on the current progress.",},
-          {type: "media", images: [{type: "image", src: "/src/assets/images/projects/caravan/caravan_02_code_02.png", label: "Snippet of the quest processing code."}]},
+          {type: "media", images: [{type: "image", src: asset("assets/images/projects/caravan/caravan_02_code_02.png"), label: "Snippet of the quest processing code."}]},
         ]
       },
       {
@@ -718,11 +719,11 @@ export const projects: Project[] = [
       },
     ],
     gallery: [
-      { type: "image", src: "/src/assets/images/projects/caravan/caravan_02_01.png" },
-      { type: "image", src: "/src/assets/images/projects/caravan/caravan_02_02.png" },
-      { type: "image", src: "/src/assets/images/projects/caravan/caravan_02_03.png" },
-      { type: "image", src: "/src/assets/images/projects/caravan/caravan_02_04.png" },
-      { type: "image", src: "/src/assets/images/projects/caravan/caravan_02_05.png" },
+      { type: "image", src: asset("assets/images/projects/caravan/caravan_02_01.png") },
+      { type: "image", src: asset("assets/images/projects/caravan/caravan_02_02.png") },
+      { type: "image", src: asset("assets/images/projects/caravan/caravan_02_03.png") },
+      { type: "image", src: asset("assets/images/projects/caravan/caravan_02_04.png") },
+      { type: "image", src: asset("assets/images/projects/caravan/caravan_02_05.png") },
     ],
   },
   {
@@ -732,7 +733,7 @@ export const projects: Project[] = [
     category: "personal-projects",
     title: "Lab Rats",
     tags: ["Unreal Engine", "Unity", "Multiplayer", "Horror"],
-    thumbnail: { type: "image", src: "/src/assets/images/projects/labrats/labrats_01.png" },
+    thumbnail: { type: "image", src: asset("assets/images/projects/labrats/labrats_01.png") },
     description: "You and your friends are lab rats for a corrupt corperation, explore dimensions, find loot and make the most of your eternal sentence.",
     heroImage: { type: "youtube", videoId: "4jSZBeIbYfs" },
     lead: "You and your friends are lab rats for a corrupt corperation, explore dimensions, find loot and make the most of your eternal sentence.",
@@ -756,7 +757,7 @@ export const projects: Project[] = [
         images: [
           {
             type: "image",
-            src: "/src/assets/images/projects/labrats/labrats_item_demo.png",
+            src: asset("assets/images/projects/labrats/labrats_item_demo.png"),
             label:"Item pickup and UI example",
           },
         ]
@@ -766,16 +767,16 @@ export const projects: Project[] = [
         title: "Level Generator",
         content: [
           {type: "text", text: "By far the level generator for this game was one of the most complex mechanics Ive ever created. The system itself is structured in a way where the level generator takes in a scriptable object that implements an interface. This scriptable object contains all the generation config and code, it then runs the generator using a seed thats sent over the network to create a unique dungeon. This system had to be easily extendable because of the amount of levels I wanted to implement.",},
-          {type: "media", images: [{type: "image", src: "/src/assets/images/projects/labrats/code_02.png", label: "Example of Level Scriptable Object"}]},
+          {type: "media", images: [{type: "image", src: asset("assets/images/projects/labrats/code_02.png"), label: "Example of Level Scriptable Object"}]},
           {type: "text", text: "The main method of generation was done using an algorithm that followed these steps: place rooms -> create points for each room -> use Delaunay triangulate to connect rooms -> find the mst of all the points -> add some extra connections -> then create hallways between every room using the connections made."},
-          {type: "media", images: [{type: "image", src: "/src/assets/images/projects/labrats/code_01.png", label: "Implementation of one layer"}]},
+          {type: "media", images: [{type: "image", src: asset("assets/images/projects/labrats/code_01.png"), label: "Implementation of one layer"}]},
           {type: "text", text: "This method allowed for every room to be included and for generation to be unique enough that it dosent feel stale."}
         ],
         imageLayout: "center",
         images: [
           {
             type: "image",
-            src: "/src/assets/images/projects/labrats/labrats_level_demo_01.png",
+            src: asset("assets/images/projects/labrats/labrats_level_demo_01.png"),
             label:"Sewers Level",
           },
         ]
@@ -790,7 +791,7 @@ export const projects: Project[] = [
     category: "personal-projects",
     title: "Sewage",
     tags: ["Unreal Engine", "Horror", "3D"],
-    thumbnail: { type: "image", src: "/src/assets/images/projects/sewage/sewage_thumbnail.png" },
+    thumbnail: { type: "image", src: asset("assets/images/projects/sewage/sewage_thumbnail.png") },
     description: "A short horror game about escaping a sewer network.",
     heroImage: { type: "youtube", videoId: "ecSWRAPM2_U" },
     lead: "A short horror game about escaping a sewer network after finding out you're not alone.",
@@ -804,9 +805,9 @@ export const projects: Project[] = [
       },
     ],
     gallery: [
-      { type: "image", src: "/src/assets/images/projects/sewage/sewage_01.png" },
-      { type: "image", src: "/src/assets/images/projects/sewage/sewage_02.png" },
-      { type: "image", src: "/src/assets/images/projects/sewage/sewage_03.png" },
+      { type: "image", src: asset("assets/images/projects/sewage/sewage_01.png") },
+      { type: "image", src: asset("assets/images/projects/sewage/sewage_02.png") },
+      { type: "image", src: asset("assets/images/projects/sewage/sewage_03.png") },
     ],
   },
 ];

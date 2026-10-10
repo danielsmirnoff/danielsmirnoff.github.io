@@ -4,6 +4,7 @@ import type { ProjectSection, SectionBlock, Thumbnail } from '../types'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import MediaThumbnail from '../components/media-thumbnail'
+import { asset } from '../utils/asset'
 
 // Makes any media inside the frame fill it
 const MEDIA_FILL = `[&_img]:h-full [&_img]:w-full [&_img]:object-cover
@@ -16,7 +17,7 @@ const BackLink = () => (
     className="inline-flex items-center gap-2 text-sm font-semibold text-gray-300
                transition hover:text-[#fca311]"
   >
-    <img className='w-4 h-4 rotate-90' src='/src/assets/icons/down.png'></img>
+    <img className='w-4 h-4 rotate-90' src={asset("assets/icons/down.png")}></img>
     Back to Projects
   </Link>
 )

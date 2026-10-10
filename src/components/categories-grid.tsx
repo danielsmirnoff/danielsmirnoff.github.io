@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { projects, categories } from '../data/projects'
 import type { Thumbnail } from '../types'
+import { asset } from '../utils/asset'
 
 // Helper to extract a static image URL regardless of media type
 const getMediaImage = (media: Thumbnail): string => {
@@ -61,7 +62,7 @@ export default function CategoriesGrid() {
                     <span className="text-sm font-semibold text-[#fca311]">
                       View All
                     </span>
-                    <img src="/src/assets/icons/down.png" className="w-3 h-3 -rotate-90" alt="" />
+                    <img src={asset("assets/icons/down.png")} className="w-3 h-3 -rotate-90" alt="" />
                   </div>
                   
 

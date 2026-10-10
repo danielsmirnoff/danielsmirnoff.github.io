@@ -1,10 +1,10 @@
-import faceImg from '../assets/images/face.jpeg'
-import heroBg from '../assets/images/trailer_thumbnail.png'
 import MediaThumbnail from './media-thumbnail'
 import type {Thumbnail} from '../types'
+import { asset } from '../utils/asset';
+
 
 //zQSCR8ZoHuc
-const heroMedia: Thumbnail = { type: 'video', src: '/src/assets/videos/trailer_gameplay.mp4' }
+const heroMedia: Thumbnail = { type: 'video', src: asset("assets/videos/trailer_gameplay.mp4") }
 
 export default function Hero() {
   return (
@@ -57,7 +57,7 @@ export default function Hero() {
 
         {/* Photo */}
         <img
-          src={faceImg}
+          src={asset("assets/images/face.jpeg")}
           alt="Daniel Smirnoff"
           className="h-48 w-48 shrink-0 rounded-full border-4 border-[#fca311] object-cover
                      shadow-xl md:h-64 md:w-64"
