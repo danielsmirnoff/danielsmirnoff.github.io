@@ -4,9 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "dev": "vite",
+    "start": "vite",
     "build": "tsc -b && vite build",
     "postbuild": "node -e \"import('fs').then(f=>f.copyFileSync('dist/index.html','dist/404.html'))\"",
-    "deploy": "npm run build && gh-pages -d dist"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist --no-history"
   },
   "dependencies": {
     "react": "^19.2.7",
