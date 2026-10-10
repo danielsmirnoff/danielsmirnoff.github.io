@@ -1,0 +1,62 @@
+/* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap'); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+:root {
+  --background-color: #484b4b;
+  --text-color: #ffffff;
+
+  a:hover {
+    background-color: red;
+  }
+  .nav {
+    background-color: var(--background-color);
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav__inner {
+    align-content: center;
+  }
+  .nav__links {
+    padding: 10px;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+  }
+  .nav a {
+    padding: 20px;
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+  .nav__dropdown {
+    position: relative;
+    
+  }
+  .nav__dropdown:hover .nav__dropdown-menu {
+    display: block;
+    align-content: center;
+  }
+  .nav__dropdown-menu {
+    justify-content: center;
+    align-content: center;
+    display: none;
+    list-style: none;
+    width: 300px;
+    padding: 10px;
+    position: absolute;
+    background-color: green;
+  }
+
+  .nav__dropdown-menu li {
+    padding: 10px;
+  }
+}

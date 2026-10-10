@@ -2,15 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.875rem; /* 14px instead of default 16px */
-  letter-spacing: -0.01em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
+body {
+  background-color: #000000;
   font-family: 'JetBrains Mono', monospace;
+  color: white;
 }
