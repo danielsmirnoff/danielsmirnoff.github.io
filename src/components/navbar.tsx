@@ -36,7 +36,7 @@ export default function Navbar() {
         {/* Bottom row: nav links */}
         <ul className="flex gap-6 mt-3 text-sm font-semibold text-white">
           <li>
-            <NavLink to="/#about" className='pb-1 hover:text-gray-500'>
+            <NavLink to="/#about" className='pb-1 hover:text-[#fca311]'>
               Home
             </NavLink>
           </li>
@@ -44,7 +44,7 @@ export default function Navbar() {
           <li className="relative group">
             <a
               href="/#projects"
-              className="inline-flex items-center gap-1 pb-1 transition hover:text-[#fca311]"
+              className="inline-flex items-center gap-1 pb-1 hover:text-[#fca311]"
             >
               Projects
               <img src="/src/assets/icons/down.png" className="w-3 h-3 transition-transform duration-50 group-hover:rotate-180 group-focus-within:rotate-180" alt="" />
@@ -75,13 +75,13 @@ export default function Navbar() {
           </li>
 
           <li>
-            <NavLink to="/#education" className='pb-1 hover:text-gray-500'>
+            <NavLink to="/#education" className='pb-1 hover:text-[#fca311]'>
               Education
             </NavLink>
           </li>
 
           <li>
-            <NavLink to="/#contact" className='pb-1 hover:text-gray-500'>
+            <NavLink to="/#contact" className='pb-1 hover:text-[#fca311]'>
               Contact
             </NavLink>
           </li>

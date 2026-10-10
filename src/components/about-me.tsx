@@ -13,10 +13,12 @@ export default function AboutMe() {
       
         <div className="max-w-6xl mx-auto grid grid-cols-1 gap-6 md:grid-cols-3">
           <div className="rounded-xl bg-[#14213d] p-6 shadow-lg">
-            <h1 className="text-2xl font-bold text-white">My Passion</h1>
+            <h1 className="text-2xl font-bold text-white">My Journey</h1>
             <p className="mt-2 text-gray-200">
               Game development is my passion. What started it all for me was playing around with visual scripting in Unreal Engine 4 when I was 13,
               since then I knew this is what I want to do. 10 years later here I am still passionate and still wanting to learn more.
+              <br/><br/>
+              Since starting in Unreal Engine 4, I moved over to Unity which I use as my main engine and have even tried Godot and other frameworks. Ive been enjoying my journey learning C# and all it has to offer but I still feel like I want to learn more!
             </p>
           </div>
 

@@ -14,7 +14,7 @@ export const skills: Skill[] = [
   {
     icon: "image",
     title: "Art & Design",
-    items: ["Blender", "Substance Painter", "Figma"]
+    items: ["Blender", "Substance Painter", "Figma", "Aseprite"]
   },
   {
     icon: "pencil",

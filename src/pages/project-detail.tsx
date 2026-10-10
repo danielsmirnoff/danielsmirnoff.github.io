@@ -1,8 +1,14 @@
 import { useParams, Link } from 'react-router-dom'
 import { projects, categories } from '../data/projects'
+import type { ProjectSection, SectionBlock, Thumbnail } from '../types'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import MediaThumbnail from '../components/media-thumbnail'
+
+// Makes any media inside the frame fill it
+const MEDIA_FILL = `[&_img]:h-full [&_img]:w-full [&_img]:object-cover
+                    [&_video]:h-full [&_video]:w-full [&_video]:object-cover
+                    [&_iframe]:h-full [&_iframe]:w-full`
 
 const BackLink = () => (
   <Link
@@ -14,6 +20,171 @@ const BackLink = () => (
     Back to Projects
   </Link>
 )
+
+/** A single piece of media with an optional caption underneath. */
+const MediaFigure = ({ media, title }: { media: Thumbnail; title: string }) => (
+  <figure className="w-full">
+    <div className={`aspect-video overflow-hidden rounded-xl bg-[#0b1530] ${MEDIA_FILL}`}>
+      <MediaThumbnail media={media} title={media.label ?? title} autoPlay={true} />
+    </div>
+    {media.label && (
+      <figcaption className="mt-2 text-center text-sm text-gray-400">{media.label}</figcaption>
+    )}
+  </figure>
+)
+
+const BulletList = ({ items }: { items: string[] }) => (
+  <ul className="mt-4 space-y-2 text-gray-300">
+    {items.map((item) => (
+      <li key={item} className="flex gap-3">
+        <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#fca311]" />
+        <span className="leading-relaxed">{item}</span>
+      </li>
+    ))}
+  </ul>
+)
+
+/** Paragraphs and bullet list for a section. */
+const SectionText = ({ section }: { section: ProjectSection }) => (
+  <>
+    {section.paragraphs?.map((p) => (
+      <p key={p} className="mt-4 leading-relaxed text-gray-300">
+        {p}
+      </p>
+    ))}
+
+    {section.list && <BulletList items={section.list} />}
+  </>
+)
+
+/** Ordered blocks: text, lists and media in whatever order they are defined. */
+const SectionBlocks = ({
+  blocks,
+  projectTitle,
+  sectionTitle,
+}: {
+  blocks: SectionBlock[]
+  projectTitle: string
+  sectionTitle: string
+}) => (
+  // flow-root contains floated media so it never spills out of the card
+  <div className="flow-root">
+    {blocks.map((block, i) => {
+      switch (block.type) {
+        case 'text':
+          return (
+            <p key={i} className="mt-4 leading-relaxed text-gray-300">
+              {block.text}
+            </p>
+          )
+
+        case 'list':
+          return <BulletList key={i} items={block.items} />
+
+        case 'media': {
+          const layout = block.layout ?? 'center'
+          const figures = block.images.map((media, j) => (
+            <MediaFigure
+              key={j}
+              media={media}
+              title={`${projectTitle} - ${sectionTitle} ${i + 1}.${j + 1}`}
+            />
+          ))
+
+          if (layout === 'center') {
+            return (
+              <div
+                key={i}
+                className={`clear-both mx-auto mt-6 grid gap-4 ${
+                  block.images.length === 1 ? 'max-w-2xl grid-cols-1' : 'grid-cols-1 sm:grid-cols-2'
+                }`}
+              >
+                {figures}
+              </div>
+            )
+          }
+
+          // left / right: float beside the following text on md+, stacked on mobile
+          return (
+            <div
+              key={i}
+              className={`mt-4 flex w-full flex-col gap-4 md:mb-2 md:w-2/5 ${
+                layout === 'left' ? 'md:float-left md:mr-6' : 'md:float-right md:ml-6'
+              }`}
+            >
+              {figures}
+            </div>
+          )
+        }
+      }
+    })}
+  </div>
+)
+
+/** A section card: heading, text, and optional media laid out left, right or centered. */
+const SectionCard = ({ section, projectTitle }: { section: ProjectSection; projectTitle: string }) => {
+  const images = section.images ?? []
+  const layout = section.imageLayout ?? 'center'
+
+  // Ordered content takes over the whole section body
+  if (section.content) {
+    return (
+      <section className="rounded-xl bg-[#14213d] p-6 shadow-lg md:p-8">
+        <h2 className="text-2xl font-semibold text-white">{section.title}</h2>
+        <SectionBlocks
+          blocks={section.content}
+          projectTitle={projectTitle}
+          sectionTitle={section.title}
+        />
+      </section>
+    )
+  }
+
+  const renderMedia = (media: Thumbnail, i: number) => (
+    <MediaFigure
+      key={i}
+      media={media}
+      title={`${projectTitle} - ${section.title} ${i + 1}`}
+    />
+  )
+
+  return (
+    <section className="rounded-xl bg-[#14213d] p-6 shadow-lg md:p-8">
+      <h2 className="text-2xl font-semibold text-white">{section.title}</h2>
+
+      {images.length === 0 && <SectionText section={section} />}
+
+      {images.length > 0 && layout === 'center' && (
+        <>
+          <SectionText section={section} />
+          <div
+            className={`mx-auto mt-6 grid gap-4 ${
+              images.length === 1 ? 'max-w-2xl grid-cols-1' : 'grid-cols-1 sm:grid-cols-2'
+            }`}
+          >
+            {images.map(renderMedia)}
+          </div>
+        </>
+      )}
+
+      {images.length > 0 && layout !== 'center' && (
+        <div
+          className={`mt-4 flex flex-col gap-6 md:items-start ${
+            layout === 'right' ? 'md:flex-row-reverse' : 'md:flex-row'
+          }`}
+        >
+          {/* Media comes first in the DOM so it stacks above the text on mobile */}
+          <div className="flex w-full flex-col gap-4 md:w-2/5 md:shrink-0">
+            {images.map(renderMedia)}
+          </div>
+          <div className="min-w-0 flex-1 [&>:first-child]:mt-0">
+            <SectionText section={section} />
+          </div>
+        </div>
+      )}
+    </section>
+  )
+}
 
 export default function ProjectDetail() {
   const { slug } = useParams<{ slug: string }>()
@@ -53,11 +224,8 @@ export default function ProjectDetail() {
         <BackLink />
 
         {/* Hero media */}
-        <div className="mt-6 aspect-video w-full overflow-hidden rounded-2xl
-                        bg-[#14213d] shadow-xl
-                        [&_img]:h-full [&_img]:w-full [&_img]:object-cover
-                        [&_video]:h-full [&_video]:w-full [&_video]:object-cover
-                        [&_iframe]:h-full [&_iframe]:w-full">
+        <div className={`mt-6 aspect-video w-full overflow-hidden rounded-2xl
+                        bg-[#14213d] shadow-xl ${MEDIA_FILL}`}>
           <MediaThumbnail
             media={project.heroImage}
             title={project.title}
@@ -80,6 +248,8 @@ export default function ProjectDetail() {
                 </Link>
               </>
             )}
+            <span className="text-white/20">/</span>
+            <span className="text-gray-400">{project.status}</span>
           </div>
 
           <h1 className="mt-3 text-4xl font-bold text-white md:text-5xl">{project.title}</h1>
@@ -126,29 +296,7 @@ export default function ProjectDetail() {
         {/* Sections */}
         <div className="mt-10 space-y-6">
           {project.sections.map((section) => (
-            <section
-              key={section.title}
-              className="rounded-xl bg-[#14213d] p-6 shadow-lg md:p-8"
-            >
-              <h2 className="text-2xl font-semibold text-white">{section.title}</h2>
-
-              {section.paragraphs?.map((p) => (
-                <p key={p} className="mt-4 leading-relaxed text-gray-300">
-                  {p}
-                </p>
-              ))}
-
-              {section.list && (
-                <ul className="mt-4 space-y-2 text-gray-300">
-                  {section.list.map((item) => (
-                    <li key={item} className="flex gap-3">
-                      <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#fca311]" />
-                      <span className="leading-relaxed">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </section>
+            <SectionCard key={section.title} section={section} projectTitle={project.title} />
           ))}
         </div>
 
@@ -160,15 +308,11 @@ export default function ProjectDetail() {
 
             <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
               {project.gallery.map((media, i) => (
-                <div
+                <MediaFigure
                   key={i}
-                  className="aspect-video overflow-hidden rounded-xl bg-[#14213d]
-                             [&_img]:h-full [&_img]:w-full [&_img]:object-cover
-                             [&_video]:h-full [&_video]:w-full [&_video]:object-cover
-                             [&_iframe]:h-full [&_iframe]:w-full"
-                >
-                  <MediaThumbnail media={media} title={`${project.title} gallery ${i + 1}`} />
-                </div>
+                  media={media}
+                  title={`${project.title} gallery ${i + 1}`}
+                />
               ))}
             </div>
           </section>

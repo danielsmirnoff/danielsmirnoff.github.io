@@ -4,11 +4,11 @@ import MediaThumbnail from './media-thumbnail'
 import type {Thumbnail} from '../types'
 
 //zQSCR8ZoHuc
-const heroMedia: Thumbnail = { type: 'youtube', videoId: 'zQSCR8ZoHuc' }
+const heroMedia: Thumbnail = { type: 'video', src: '/src/assets/videos/trailer_gameplay.mp4' }
 
 export default function Hero() {
   return (
-    <header id="about" className="relative overflow-hidden bg-cover scroll-mt-32 px-6 py-56" style={{ backgroundImage: `url(${heroBg})` }}>
+    <header id="about" className="relative overflow-hidden bg-cover scroll-mt-32 px-6 py-56">
       {/* Video layer */}
       <div className="pointer-events-none absolute inset-0" aria-hidden="true">
         <MediaThumbnail
@@ -39,8 +39,8 @@ export default function Hero() {
           <p className="mt-6 text-base leading-relaxed text-gray-200 md:text-lg">
             I'm a game developer with a passion for creating engaging and innovative
             gaming experiences. With expertise in Unity, Godot, and Unreal Engine, I specialize
-            in gameplay programming and implementing complex game mechanics, along with a
-            range of generalist tasks.
+            in gameplay programming and implementing complex game mechanics and I'm comfortable taking on any part of
+            the development pipeline.
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4 md:justify-start">

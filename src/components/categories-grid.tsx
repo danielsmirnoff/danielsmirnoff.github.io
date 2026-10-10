@@ -31,7 +31,8 @@ export default function CategoriesGrid() {
               to={`/projects/category/${cat.slug}`}
               key={cat.slug}
               className="group flex flex-col overflow-hidden rounded-xl
-                         bg-[#14213d] shadow-lg hover:border-1 hover:border-white"
+                         bg-[#14213d] shadow-lg transition duration-100
+                       hover:-translate-y-1 hover:border-1 hover:border-white"
             >
               {/* Cover image */}
               <div className="aspect-video w-full overflow-hidden">
@@ -46,7 +47,8 @@ export default function CategoriesGrid() {
 
               {/* Text */}
               <div className="flex flex-1 flex-col p-6">
-                <h3 className="text-2xl font-semibold text-white">{cat.title}</h3>
+                <h3 className="text-2xl font-semibold text-white transition duration-100
+                             group-hover:text-[#fca311]">{cat.title}</h3>
                 <p className="mt-2 flex-1 text-sm leading-relaxed text-gray-300">
                   {cat.description}
                 </p>
