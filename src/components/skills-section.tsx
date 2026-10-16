@@ -13,7 +13,7 @@ export default function SkillsSection() {
   return (
 
     <section id="skills" className="scroll-mt-32  px-6 py-16" style={{ 
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("${asset("assets/images/school.jpg")}")`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("${asset("assets/images/code.png")}")`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
